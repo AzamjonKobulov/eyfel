@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'SF UI Display';
+  src: url('/public/assets/fonts/SFUIDisplay-Medium.eot');
+  src: url('/public/assets/fonts/SFUIDisplay-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('/public/assets/fonts/SFUIDisplay-Medium.woff2') format('woff2'),
+    url('/public/assets/fonts/SFUIDisplay-Medium.woff') format('woff'),
+    url('/public/assets/fonts/SFUIDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    @apply text-brand-grey font-golos;
+  }
+
+  h2 {
+    @apply font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-55;
+  }
+
+  h3 {
+    @apply font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-40;
+  }
+
+  section {
+    @apply pt-16 sm:pt-24 md:pt-32 lg:pt-170;
+  }
+}
