@@ -202,14 +202,46 @@
       <!-- Hero -->
       <section id="hero" class="pt-0">
         <div
-          class="max-w-base mx-auto h-[43.75rem] relative overflow-hidden rounded-20 px-5 xl:px-10"
+          class="max-w-base mx-auto h-96 sm:h-[28.125rem] lg:h-[31.25rem] xl:h-[43.75rem] relative bg-brand-whitish rounded-20 overflow-hidden px-5 xl:px-10"
         >
           <!-- Radius Image -->
           <img
-            src="./assets/images/bg-banner.png"
+            src="./assets/images/img-hero-radius.svg"
             alt="Radius"
-            class="absolute inset-0"
+            class="h-full mx-auto"
           />
+          <div class="flex items-center justify-between">
+            <img
+              src="./assets/images/img-banner-1.png"
+              alt="Banner Image"
+              class="h-full absolute left-0 bottom-0"
+            />
+            <!-- Title -->
+            <div class="space-y-[4.375rem]">
+              <h1 class="font-semibold text-68 text-center">
+                Ароматы по мотивам мировых брендов
+              </h1>
+              <button
+                class="lg:h-70 bg-brand-grey text-white text-xl font-medium"
+              >
+                Перейти в каталог
+                <svg
+                  width="310"
+                  height="70"
+                  viewBox="0 0 310 70"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="310" height="70" rx="6" fill="#232323" />
+                </svg>
+              </button>
+            </div>
+            <img
+              src="./assets/images/img-banner-2.png"
+              alt="Banner Image"
+              class="h-full absolute right-0 bottom-0"
+            />
+          </div>
         </div>
       </section>
     </main>
