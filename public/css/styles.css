@@ -603,6 +603,9 @@ section{
 .relative{
   position: relative;
 }
+.inset-0{
+  inset: 0px;
+}
 .-bottom-2{
   bottom: -0.5rem;
 }
@@ -727,6 +730,10 @@ section{
   --tw-bg-opacity: 1;
   background-color: rgb(238 238 242 / var(--tw-bg-opacity));
 }
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -770,6 +777,9 @@ section{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.mix-blend-darken{
+  mix-blend-mode: darken;
+}
 .transition-all{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -803,6 +813,10 @@ section{
 
 @media (min-width: 640px){
 
+  .sm\:block{
+    display: block;
+  }
+
   .sm\:flex{
     display: flex;
   }
@@ -821,6 +835,10 @@ section{
 
   .sm\:h-\[28\.125rem\]{
     height: 28.125rem;
+  }
+
+  .sm\:h-full{
+    height: 100%;
   }
 
   .sm\:w-24{
@@ -850,8 +868,16 @@ section{
 
 @media (min-width: 1024px){
 
+  .lg\:block{
+    display: block;
+  }
+
   .lg\:flex{
     display: flex;
+  }
+
+  .lg\:hidden{
+    display: none;
   }
 
   .lg\:h-\[31\.25rem\]{
