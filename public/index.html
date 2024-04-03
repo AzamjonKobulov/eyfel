@@ -202,55 +202,66 @@
       <!-- Hero -->
       <section id="hero" class="pt-0">
         <div
-          class="max-w-base mx-auto h-96 lg:h-[31.25rem] xl:h-[43.75rem] relative bg-brand-whitish rounded-20 overflow-hidden px-5 xl:px-10"
+          class="max-w-base mx-auto xl:h-[43.75rem] relative grid place-content-center bg-brand-whitish rounded-20 overflow-hidden px-5 xl:px-10"
         >
           <!-- Radius Image -->
           <img
             src="./assets/images/img-hero-radius.svg"
             alt="Radius"
-            class="block sm:h-full mx-auto"
+            class="block lg:hidden absolute top-1/2 -translate-y-1/2 lg:top-0 left-1/2 -translate-x-1/2"
           />
           <!-- Banner Image -->
           <img
             src="./assets/images/bg-banner.png"
             alt="Banner Image"
-            class="absolute inset-0 w-full h-full object-cover"
+            class="hidden lg:block absolute inset-0 w-full h-full object-cover"
           />
-          <!-- Title -->
-          <div class="w-full absolute z-20 grid place-content-center">
-            <div class="max-w-[45.5rem] space-y-[4.375rem]">
-              <h1 class="font-semibold text-68 text-center">
+
+          <!-- Title & Images -->
+          <div class="relative z-10 flex flex-col items-center justify-between">
+            <!-- Image 1 -->
+            <img
+              src="./assets/images/img-banner-1.png"
+              alt="Banner Image"
+              class="w-full"
+            />
+            <!-- Title & Button -->
+            <div
+              class="max-w-[45.5rem] relative z-10 space-y-10 lg:space-y-[4.375rem]"
+            >
+              <!-- Title -->
+              <h1
+                class="font-semibold text-4xl sm:text-5xl lg:text-6xl xl:text-68 text-center"
+              >
                 Ароматы по мотивам мировых брендов
               </h1>
+              <!-- Button -->
               <button
-                class="lg:h-70 bg-brand-grey text-white text-xl font-medium"
+                class="h-16 lg:h-70 mx-auto flex items-center gap-6 bg-brand-grey text-white text-base lg:text-xl font-medium rounded-md px-7"
               >
                 Перейти в каталог
                 <svg
-                  width="310"
-                  height="70"
-                  viewBox="0 0 310 70"
+                  width="58"
+                  height="20"
+                  viewBox="0 0 58 20"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-12 lg:h-auto lg:w-auto"
                 >
-                  <rect width="310" height="70" rx="6" fill="#232323" />
+                  <path
+                    d="M56.8839 10.8839C57.372 10.3957 57.372 9.60427 56.8839 9.11612L48.9289 1.16117C48.4408 0.67301 47.6493 0.67301 47.1612 1.16117C46.673 1.64932 46.673 2.44078 47.1612 2.92893L54.2322 10L47.1612 17.0711C46.673 17.5592 46.673 18.3507 47.1612 18.8388C47.6493 19.327 48.4408 19.327 48.9289 18.8388L56.8839 10.8839ZM0 11.25H56V8.75H0V11.25Z"
+                    fill="#CCFC0A"
+                  />
                 </svg>
               </button>
             </div>
+            <!-- Image 2 on Mobile -->
+            <img
+              src="./assets/images/img-banner-2.png"
+              alt="Banner Image"
+              class="w-full relative -right-5"
+            />
           </div>
-          <!-- <div class="flex flex-col items-center justify-between">
-            <img
-              src="./assets/images/img-banner-with-bg-1.png"
-              alt="Banner Image"
-              class="lg:hidden h-full absolute left-0 bottom-0 mix-blend-darken"
-            />
-
-            <img
-              src="./assets/images/img-banner-with-bg-2.png"
-              alt="Banner Image"
-              class="lg:hidden h-full absolute right-0 bottom-0"
-            />
-          </div> -->
         </div>
       </section>
     </main>
