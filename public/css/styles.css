@@ -805,6 +805,10 @@ section{
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .pt-5{
   padding-top: 1.25rem;
 }
