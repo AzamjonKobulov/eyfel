@@ -7,6 +7,7 @@ module.exports = {
         base: '117.5rem',
       },
       screens: {
+        xs: '30rem',
         '2xl': '90rem',
       },
       fontFamily: {
