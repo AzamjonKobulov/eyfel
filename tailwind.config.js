@@ -49,6 +49,7 @@ module.exports = {
       },
       borderRadius: {
         20: '1.25rem',
+        30: '1.875rem',
       },
       backgroundColor: {
         sex: 'linear-gradient(261.94deg, rgba(56, 52, 48, 0) 14.88%, rgba(79, 70, 61, 0.8) 95.25%)',
