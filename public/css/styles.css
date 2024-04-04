@@ -1257,6 +1257,10 @@ section{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.hover\:bg-black:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
 .hover\:fill-brand-grey\/50:hover{
   fill: rgb(35 35 35 / 0.5);
 }
@@ -1434,6 +1438,10 @@ section{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .sm\:gap-10{
+    gap: 2.5rem;
+  }
+
   .sm\:space-y-12 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
     margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1579,6 +1587,10 @@ section{
     margin-bottom: calc(3rem * var(--tw-space-y-reverse));
   }
 
+  .md\:rounded-20{
+    border-radius: 1.25rem;
+  }
+
   .md\:px-5{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -1690,6 +1702,10 @@ section{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:flex-row{
+    flex-direction: row;
+  }
+
   .lg\:gap-12{
     gap: 3rem;
   }
@@ -1724,6 +1740,10 @@ section{
     --tw-space-y-reverse: 0;
     margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+  }
+
+  .lg\:rounded-30{
+    border-radius: 1.875rem;
   }
 
   .lg\:py-5{
@@ -1784,6 +1804,10 @@ section{
     margin-top: 1.5rem;
   }
 
+  .xl\:mt-14{
+    margin-top: 3.5rem;
+  }
+
   .xl\:h-20{
     height: 5rem;
   }
@@ -1798,6 +1822,14 @@ section{
 
   .xl\:w-20{
     width: 5rem;
+  }
+
+  .xl\:max-w-\[62rem\]{
+    max-width: 62rem;
+  }
+
+  .xl\:flex-row{
+    flex-direction: row;
   }
 
   .xl\:space-y-6 > :not([hidden]) ~ :not([hidden]){

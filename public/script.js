@@ -30,3 +30,14 @@ var swiper = new Swiper('.mySwiper', {
     },
   },
 });
+
+var swiper = new Swiper('.mySwiper4', {
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'progressbar',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
