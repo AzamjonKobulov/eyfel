@@ -208,74 +208,65 @@
       <!-- Hero -->
       <section id="hero" class="pt-5 sm:pt-0">
         <div class="max-w-base mx-auto px-5 3xl:px-10">
+          <!-- Banner -->
           <div
-            class="sm:h-[34.375rem] xl:h-[34.375rem] 3xl:h-[43.75rem] relative grid place-content-center bg-brand-grey-100 rounded-20 overflow-hidden"
+            class="md:h-[28.125rem] lg:h-[34.375rem] 2xl:h-[37.5rem] 3xl:h-[43.75rem] relative grid place-content-center bg-brand-grey-100 rounded-20 overflow-hidden pb-10 sm:pb-24 md:pb-0"
           >
-            <!-- Radius Image -->
-            <img
-              src="./assets/images/img-hero-radius.svg"
-              alt="Radius"
-              class="hidden sm:block h-full absolute top-1/2 -translate-y-1/2 sm:translate-y-0 sm:top-0 left-1/2 -translate-x-1/2"
-            />
-            <!-- Banner Image -->
+            <!-- Image -->
             <img
               src="./assets/images/bg-banner.png"
               alt="Banner Image"
-              class="hidden 2xl:block absolute inset-0 w-full h-full"
+              class="w-full h-full absolute hidden 2xl:block inset-0 object-cover"
             />
-            <!-- Banner Image 2 -->
+            <!-- Image Small -->
             <img
-              src="./assets/images/bg-banner-2.png"
-              alt="Banner Image"
-              class="hidden xl:block 3xl:hidden absolute inset-0 w-full h-full"
+              src="./assets/images/bg-banner-small.png"
+              alt="Banner Image Small"
+              class="w-full h-full absolute inset-0 hidden md:block 2xl:hidden object-cover"
             />
-            <!-- Title & Images -->
+            <!-- Radial Image -->
+            <img
+              src="./assets/images/img-hero-radius.svg"
+              alt="Image"
+              class="absolute -bottom-1/3 w-4/5 left-1/2 -translate-x-1/2 md:hidden"
+            />
+            <!-- Title & Button -->
             <div
-              class="h-full flex flex-col sm:flex-row items-center justify-end sm:justify-between"
+              class="max-w-[45.5rem] h-full flex flex-col justify-center relative z-20 space-y-8 sm:space-y-12 2xl:space-y-[4.375rem]"
             >
-              <!-- Image on mobile 1 -->
+              <!-- Product Image -->
               <img
-                src="./assets/images/img-banner-with-bottom-shadow-1.png"
+                src="./assets/images/img-banner-1.png"
                 alt="Banner Image"
-                class="w-full sm:w-1/3 lg:w-[30%] xl:hidden relative z-10 sm:absolute top-0 left-0"
+                class="w-4/5 mx-auto sm:mx-0 sm:ml-auto sm:mr-8 md:hidden mt-5 sm:mt-10"
               />
 
-              <!-- Title & Button -->
-              <div
-                class="max-w-[45.5rem] h-full flex flex-col justify-center relative z-20 space-y-10 lg:space-y-[4.375rem]"
+              <!-- Title -->
+              <h1
+                class="font-semibold text-4xl sm:text-6xl md:text-5xl xl:text-68 text-center"
               >
-                <!-- Title -->
-                <h1
-                  class="font-semibold text-4xl sm:text-5xl lg:text-6xl xl:text-68 text-center"
+                Ароматы по <br class="hidden sm:block md:hidden" />
+                мотивам <br class="hidden md:block" />
+                мировых брендов
+              </h1>
+              <!-- Button -->
+              <button
+                class="h-12 sm:h-[6.25rem] md:h-50 xl:h-70 w-fit md:w-auto mx-auto group flex items-center hover:gap-3.5 xl:hover:gap-6 bg-brand-grey text-white text-base sm:text-26 md:text-base xl:text-xl font-medium rounded-md overflow-hidden active:bg-black transition-all duration-300 px-5 sm:px-10 md:px-5 xl:px-7"
+              >
+                Перейти в каталог
+                <svg
+                  width="58"
+                  height="20"
+                  viewBox="0 0 58 20"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-0 h-4 group-hover:w-9 xs:group-hover:w-12 sm:h-8 sm:group-hover:w-20 md:group-hover:w-12 xl:h-auto fill-brand-green -translate-x-[500%] group-hover:translate-x-0 transition-all duration-300"
                 >
-                  Ароматы по мотивам <br class="hidden sm:block lg:hidden" />
-                  мировых брендов
-                </h1>
-                <!-- Button -->
-                <button
-                  class="h-16 lg:h-70 mx-auto group flex items-center gap-6 bg-brand-grey text-white text-base lg:text-xl font-medium border-2 border-brand-grey rounded-md hover:bg-white hover:text-brand-grey transition-all duration-300 px-7"
-                >
-                  Перейти в каталог
-                  <svg
-                    width="58"
-                    height="20"
-                    viewBox="0 0 58 20"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-12 lg:h-auto lg:w-auto fill-brand-green group-hover:translate-x-3 group-hover:fill-brand-grey hover:transition-all duration-300"
-                  >
-                    <path
-                      d="M56.8839 10.8839C57.372 10.3957 57.372 9.60427 56.8839 9.11612L48.9289 1.16117C48.4408 0.67301 47.6493 0.67301 47.1612 1.16117C46.673 1.64932 46.673 2.44078 47.1612 2.92893L54.2322 10L47.1612 17.0711C46.673 17.5592 46.673 18.3507 47.1612 18.8388C47.6493 19.327 48.4408 19.327 48.9289 18.8388L56.8839 10.8839ZM0 11.25H56V8.75H0V11.25Z"
-                    />
-                  </svg>
-                </button>
-              </div>
-              <!-- Image on mobile 2 -->
-              <img
-                src="./assets/images/img-banner-with-bottom-shadow-2.png"
-                alt="Banner Image"
-                class="w-full sm:w-1/3 lg:w-[30%] xl:hidden relative z-10 sm:absolute bottom-5 right-0"
-              />
+                  <path
+                    d="M56.8839 10.8839C57.372 10.3957 57.372 9.60427 56.8839 9.11612L48.9289 1.16117C48.4408 0.67301 47.6493 0.67301 47.1612 1.16117C46.673 1.64932 46.673 2.44078 47.1612 2.92893L54.2322 10L47.1612 17.0711C46.673 17.5592 46.673 18.3507 47.1612 18.8388C47.6493 19.327 48.4408 19.327 48.9289 18.8388L56.8839 10.8839ZM0 11.25H56V8.75H0V11.25Z"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -288,31 +279,31 @@
           <div class="flex items-center justify-between">
             <h3>Популярные товары</h3>
             <div class="hidden lg:flex items-center gap-7">
-              <button class="prev w-8 h-5 !block">
+              <button class="prev w-8 h-5 !block group">
                 <svg
                   width="31"
                   height="16"
                   viewBox="0 0 31 16"
-                  fill="none"
+                  fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
+                  class="fill-brand-grey hover:fill-brand-grey/50 group-active:fill-brand-grey/50"
                 >
                   <path
                     d="M0.292892 8.7071C-0.0976315 8.31658 -0.0976314 7.68341 0.292893 7.29289L6.65686 0.92893C7.04738 0.538406 7.68054 0.538406 8.07107 0.92893C8.46159 1.31945 8.46159 1.95262 8.07107 2.34314L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.7071ZM31 9L1 9L1 7L31 7L31 9Z"
-                    fill="#232323"
                   />
                 </svg>
               </button>
-              <button class="next w-8 h-5 !block">
+              <button class="next w-8 h-5 !block group">
                 <svg
                   width="31"
                   height="16"
                   viewBox="0 0 31 16"
-                  fill="none"
+                  fill="currenColor"
                   xmlns="http://www.w3.org/2000/svg"
+                  class="fill-brand-grey hover:fill-brand-grey/50 group-active:fill-brand-grey/50"
                 >
                   <path
                     d="M30.7071 8.7071C31.0976 8.31658 31.0976 7.68341 30.7071 7.29289L24.3431 0.92893C23.9526 0.538406 23.3195 0.538406 22.9289 0.92893C22.5384 1.31945 22.5384 1.95262 22.9289 2.34314L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.7071ZM8.74228e-08 9L30 9L30 7L-8.74228e-08 7L8.74228e-08 9Z"
-                    fill="#232323"
                   />
                 </svg>
               </button>
@@ -323,19 +314,19 @@
             <div class="swiper-wrapper">
               <!-- Slide -->
               <div class="swiper-slide">
-                <div class="space-y-5 lg:space-y-6 bg-white">
+                <a href="#" class="space-y-5 lg:space-y-6 bg-white group">
                   <!-- Top -->
                   <div
-                    class="h-96 lg:h-[27rem] relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
+                    class="h-[18.75rem] 2xl:h-96 relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
                   >
-                    <!-- New -->
+                    <!-- Season Spring -->
                     <span
-                      class="h-8 shrink-0 absolute top-4 left-4 z-10 grid place-content-center text-sm font-semibold bg-brand-green rounded-full px-2.5"
-                      >Новинка</span
+                      class="h-5 sm:h-8 shrink-0 absolute top-3 left-3 sm:top-4 sm:left-4 z-10 grid place-content-center text-xs sm:text-sm font-semibold bg-white rounded-full px-2 sm:px-2.5"
+                      >Сезон весна 2024</span
                     >
                     <!-- Like Button -->
                     <button
-                      class="w-10 h-10 shrink-0 absolute top-4 right-4 z-10 grid place-content-center bg-brand-grey rounded-full"
+                      class="w-7 h-7 sm:w-10 sm:h-10 shrink-0 absolute top-2.5 right-3 sm:top-4 sm:right-4 z-10 grid place-content-center bg-white rounded-full"
                     >
                       <svg
                         width="20"
@@ -343,64 +334,7 @@
                         viewBox="0 0 20 19"
                         fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="fill-brand-green"
-                      >
-                        <path
-                          d="M10 18.35L8.55 17.03C3.4 12.36 0 9.27 0 5.5C0 2.41 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.08C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.41 20 5.5C20 9.27 16.6 12.36 11.45 17.03L10 18.35Z"
-                        />
-                      </svg>
-                    </button>
-                    <img
-                      src="./assets/images/img-product-1.png"
-                      alt="Product Image"
-                      class="w-365 h-365 object-cover group-hover:scale-125 transition-all duration-300"
-                    />
-                  </div>
-                  <!-- Bottom -->
-                  <div class="space-y-5 lg:space-y-6">
-                    <!-- Text -->
-                    <a
-                      href="#"
-                      class="text-2xl lg:text-26 hover:text-brand-green transition-all duration-300 pr-5"
-                    >
-                      Ароматический диффузор  Big-Rd-02 Kirke,
-                      <span class="text-brand-grey/40 font-medium">120 мл</span>
-                    </a>
-                    <!-- Cost -->
-                    <div class="flex items-center gap-6 font-medium">
-                      <p class="text-3xl lg:text-4xl">2 390 ₽</p>
-                      <p
-                        class="text-brand-grey/40 text-xl lg:text-25 line-through"
-                      >
-                        4 200 ₽
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Slide -->
-              <div class="swiper-slide">
-                <div class="space-y-5 lg:space-y-6 bg-white">
-                  <!-- Top -->
-                  <div
-                    class="h-96 lg:h-[27rem] relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
-                  >
-                    <!-- New -->
-                    <span
-                      class="w-20 h-8 shrink-0 absolute top-4 left-4 z-10 grid place-content-center text-sm font-semibold bg-brand-green rounded-full px-2.5"
-                      >Новинка</span
-                    >
-                    <!-- Like Button -->
-                    <button
-                      class="w-10 h-10 shrink-0 absolute top-4 right-4 z-10 grid place-content-center bg-white rounded-full"
-                    >
-                      <svg
-                        width="20"
-                        height="19"
-                        viewBox="0 0 20 19"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="fill-brand-grey/15"
+                        class="w-3.5 h-3.5 sm:w-auto sm:h-auto fill-brand-grey/15"
                       >
                         <path
                           d="M10 18.35L8.55 17.03C3.4 12.36 0 9.27 0 5.5C0 2.41 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.08C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.41 20 5.5C20 9.27 16.6 12.36 11.45 17.03L10 18.35Z"
@@ -410,46 +344,47 @@
                     <img
                       src="./assets/images/img-product-2.png"
                       alt="Product Image"
-                      class="w-365 h-365 object-cover group-hover:scale-125 transition-all duration-300"
+                      class="w-56 h-60 2xl:w-365 2xl:h-365 object-cover group-hover:scale-110 transition-all duration-300"
                     />
                   </div>
                   <!-- Bottom -->
-                  <div class="space-y-5 lg:space-y-6">
+                  <div
+                    class="space-y-4 xl:space-y-6 mt-4 xl:mt-6 group-hover:text-brand-grey-500 transition-all duration-100"
+                  >
                     <!-- Text -->
-                    <a
-                      href="#"
-                      class="text-2xl lg:text-26 hover:text-brand-green transition-all duration-300 pr-5"
+                    <p
+                      class="sm:text-xl 2xl:text-26 transition-all duration-300 pr-5"
                     >
                       Парфюмерная вода W-120 50 ML Parfum,
                       <span class="text-brand-grey/40 font-medium">50 мл</span>
-                    </a>
+                    </p>
                     <!-- Cost -->
                     <div class="flex items-center gap-6 font-medium">
-                      <p class="text-3xl lg:text-4xl">1 490 ₽</p>
+                      <p class="text-xl sm:text-28 lg:text-4xl">1 490 ₽</p>
                       <p
-                        class="text-brand-grey/40 text-xl lg:text-25 line-through"
+                        class="text-brand-grey/40 sm:text-xl lg:text-25 line-through"
                       >
                         4 200 ₽
                       </p>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <!-- Slide -->
               <div class="swiper-slide">
-                <div class="space-y-5 lg:space-y-6 bg-white">
+                <a href="#" class="space-y-5 lg:space-y-6 bg-white group">
                   <!-- Top -->
                   <div
-                    class="h-96 lg:h-[27rem] relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
+                    class="h-[18.75rem] 2xl:h-96 relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
                   >
                     <!-- New -->
                     <span
-                      class="h-8 shrink-0 absolute top-4 left-4 z-10 grid place-content-center text-sm font-semibold bg-white rounded-full px-2.5"
-                      >Сезон весна 2024</span
+                      class="h-5 sm:h-8 shrink-0 absolute top-3 left-3 sm:top-4 sm:left-4 z-10 grid place-content-center text-xs sm:text-sm font-semibold bg-brand-green rounded-full px-2 sm:px-2.5"
+                      >Новинка</span
                     >
                     <!-- Like Button -->
                     <button
-                      class="w-10 h-10 shrink-0 absolute top-4 right-4 z-10 grid place-content-center bg-white rounded-full"
+                      class="w-7 h-7 sm:w-10 sm:h-10 shrink-0 absolute top-2.5 right-3 sm:top-4 sm:right-4 z-10 grid place-content-center bg-brand-grey rounded-full"
                     >
                       <svg
                         width="20"
@@ -457,7 +392,65 @@
                         viewBox="0 0 20 19"
                         fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="fill-brand-grey/15"
+                        class="w-3.5 h-3.5 sm:w-auto sm:h-auto fill-brand-green"
+                      >
+                        <path
+                          d="M10 18.35L8.55 17.03C3.4 12.36 0 9.27 0 5.5C0 2.41 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.08C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.41 20 5.5C20 9.27 16.6 12.36 11.45 17.03L10 18.35Z"
+                        />
+                      </svg>
+                    </button>
+                    <img
+                      src="./assets/images/img-product-1.png"
+                      alt="Product Image"
+                      class="w-56 h-60 2xl:w-365 2xl:h-365 object-cover group-hover:scale-110 transition-all duration-300"
+                    />
+                  </div>
+                  <!-- Bottom -->
+                  <div
+                    class="space-y-4 xl:space-y-6 mt-4 xl:mt-6 group-hover:text-brand-grey-500 transition-all duration-100"
+                  >
+                    <!-- Text -->
+                    <p
+                      class="sm:text-xl 2xl:text-26 transition-all duration-300 pr-5"
+                    >
+                      Ароматический диффузор  Big-Rd-02 Kirke,
+                      <span class="text-brand-grey/40 font-medium">120 мл</span>
+                    </p>
+                    <!-- Cost -->
+                    <div class="flex items-center gap-6 font-medium">
+                      <p class="text-xl sm:text-28 lg:text-4xl">2 390 ₽</p>
+                      <p
+                        class="text-brand-grey/40 sm:text-xl lg:text-25 line-through"
+                      >
+                        4 200 ₽
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Slide -->
+              <div class="swiper-slide">
+                <a href="#" class="space-y-5 lg:space-y-6 bg-white group">
+                  <!-- Top -->
+                  <div
+                    class="h-[18.75rem] 2xl:h-96 relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
+                  >
+                    <!-- Season Spring -->
+                    <span
+                      class="h-5 sm:h-8 shrink-0 absolute top-3 left-3 sm:top-4 sm:left-4 z-10 grid place-content-center text-xs sm:text-sm font-semibold bg-white rounded-full px-2 sm:px-2.5"
+                      >Сезон весна 2024</span
+                    >
+                    <!-- Like Button -->
+                    <button
+                      class="w-7 h-7 sm:w-10 sm:h-10 shrink-0 absolute top-2.5 right-3 sm:top-4 sm:right-4 z-10 grid place-content-center bg-white rounded-full"
+                    >
+                      <svg
+                        width="20"
+                        height="19"
+                        viewBox="0 0 20 19"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-3.5 h-3.5 sm:w-auto sm:h-auto fill-brand-grey/15"
                       >
                         <path
                           d="M10 18.35L8.55 17.03C3.4 12.36 0 9.27 0 5.5C0 2.41 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.08C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.41 20 5.5C20 9.27 16.6 12.36 11.45 17.03L10 18.35Z"
@@ -467,46 +460,47 @@
                     <img
                       src="./assets/images/img-product-3.png"
                       alt="Product Image"
-                      class="w-365 h-365 object-cover group-hover:scale-125 transition-all duration-300"
+                      class="w-56 h-60 2xl:w-365 2xl:h-365 object-cover group-hover:scale-110 transition-all duration-300"
                     />
                   </div>
                   <!-- Bottom -->
-                  <div class="space-y-5 lg:space-y-6">
+                  <div
+                    class="space-y-4 xl:space-y-6 mt-4 xl:mt-6 group-hover:text-brand-grey-500 transition-all duration-100"
+                  >
                     <!-- Text -->
-                    <a
-                      href="#"
-                      class="text-2xl lg:text-26 hover:text-brand-green transition-all duration-300 pr-5"
+                    <p
+                      class="sm:text-xl 2xl:text-26 transition-all duration-300 pr-5"
                     >
                       Парфюмерная вода Big-E-600-2 Bighill
                       <span class="text-brand-grey/40 font-medium"></span>
-                    </a>
+                    </p>
                     <!-- Cost -->
                     <div class="flex items-center gap-6 font-medium">
-                      <p class="text-3xl lg:text-4xl">1 490 ₽</p>
+                      <p class="text-xl sm:text-28 lg:text-4xl">2 190 ₽</p>
                       <p
-                        class="text-brand-grey/40 text-xl lg:text-25 line-through"
+                        class="text-brand-grey/40 sm:text-xl lg:text-25 line-through"
                       >
                         4 200 ₽
                       </p>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <!-- Slide -->
               <div class="swiper-slide">
-                <div class="space-y-5 lg:space-y-6 bg-white">
+                <a href="#" class="space-y-5 lg:space-y-6 bg-white group">
                   <!-- Top -->
                   <div
-                    class="h-96 lg:h-[27rem] relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
+                    class="h-[18.75rem] 2xl:h-96 relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
                   >
-                    <!-- New -->
+                    <!-- Season Spring -->
                     <span
-                      class="h-8 shrink-0 absolute top-4 left-4 z-10 grid place-content-center text-sm font-semibold bg-white rounded-full px-2.5"
+                      class="h-5 sm:h-8 shrink-0 absolute top-3 left-3 sm:top-4 sm:left-4 z-10 grid place-content-center text-xs sm:text-sm font-semibold bg-white rounded-full px-2 sm:px-2.5"
                       >Сезон весна 2024</span
                     >
                     <!-- Like Button -->
                     <button
-                      class="w-10 h-10 shrink-0 absolute top-4 right-4 z-10 grid place-content-center bg-white rounded-full"
+                      class="w-7 h-7 sm:w-10 sm:h-10 shrink-0 absolute top-2.5 right-3 sm:top-4 sm:right-4 z-10 grid place-content-center bg-white rounded-full"
                     >
                       <svg
                         width="20"
@@ -514,7 +508,7 @@
                         viewBox="0 0 20 19"
                         fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="fill-brand-grey/15"
+                        class="w-3.5 h-3.5 sm:w-auto sm:h-auto fill-brand-grey/15"
                       >
                         <path
                           d="M10 18.35L8.55 17.03C3.4 12.36 0 9.27 0 5.5C0 2.41 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.08C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.41 20 5.5C20 9.27 16.6 12.36 11.45 17.03L10 18.35Z"
@@ -524,36 +518,68 @@
                     <img
                       src="./assets/images/img-product-4.png"
                       alt="Product Image"
-                      class="w-365 h-365 object-cover group-hover:scale-125 transition-all duration-300"
+                      class="w-56 h-60 2xl:w-365 2xl:h-365 object-cover group-hover:scale-110 transition-all duration-300"
                     />
                   </div>
                   <!-- Bottom -->
-                  <div class="space-y-5 lg:space-y-6">
+                  <div
+                    class="space-y-4 xl:space-y-6 mt-4 xl:mt-6 group-hover:text-brand-grey-500 transition-all duration-100"
+                  >
                     <!-- Text -->
-                    <a
-                      href="#"
-                      class="text-2xl lg:text-26 hover:text-brand-green transition-all duration-300 pr-5"
+                    <p
+                      class="sm:text-xl 2xl:text-26 transition-all duration-300 pr-5"
                     >
                       Автопарфюм Oto Kokusu Okyanus (Океан),
                       <span class="text-brand-grey/40 font-medium">10 мл</span>
-                    </a>
+                    </p>
                     <!-- Cost -->
                     <div class="flex items-center gap-6 font-medium">
-                      <p class="text-3xl lg:text-4xl">1 350 ₽</p>
+                      <p class="text-xl sm:text-28 lg:text-4xl">350 ₽</p>
                       <p
-                        class="text-brand-grey/40 text-xl lg:text-25 line-through"
+                        class="text-brand-grey/40 sm:text-xl lg:text-25 line-through"
                       >
                         1 700 ₽
                       </p>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
+          <!-- Navigation Button on Mobile -->
+          <div class="flex lg:hidden items-center justify-center gap-7 mt-14">
+            <button class="prev w-8 h-5 !block group">
+              <svg
+                width="31"
+                height="16"
+                viewBox="0 0 31 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-brand-grey hover:fill-brand-grey/50 group-active:fill-brand-grey/50"
+              >
+                <path
+                  d="M0.292892 8.7071C-0.0976315 8.31658 -0.0976314 7.68341 0.292893 7.29289L6.65686 0.92893C7.04738 0.538406 7.68054 0.538406 8.07107 0.92893C8.46159 1.31945 8.46159 1.95262 8.07107 2.34314L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.7071ZM31 9L1 9L1 7L31 7L31 9Z"
+                />
+              </svg>
+            </button>
+            <button class="next w-8 h-5 !block group">
+              <svg
+                width="31"
+                height="16"
+                viewBox="0 0 31 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-brand-grey hover:fill-brand-grey/50 group-active:fill-brand-grey/50"
+              >
+                <path
+                  d="M30.7071 8.7071C31.0976 8.31658 31.0976 7.68341 30.7071 7.29289L24.3431 0.92893C23.9526 0.538406 23.3195 0.538406 22.9289 0.92893C22.5384 1.31945 22.5384 1.95262 22.9289 2.34314L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.7071ZM8.74228e-08 9L30 9L30 7L-8.74228e-08 7L8.74228e-08 9Z"
+                />
+              </svg>
+            </button>
+          </div>
           <!-- Button -->
           <button
-            class="h-16 lg:h-70 mx-auto lg:mx-0 group flex items-center gap-6 bg-brand-grey text-white text-base lg:text-xl font-medium border-2 border-brand-grey rounded-md hover:bg-white hover:text-brand-grey transition-all duration-300 mt-12 lg:mt-70 px-7"
+            class="h-12 md:h-50 xl:h-70 w-fit md:w-auto mx-auto lg:mx-0 group flex items-center hover:gap-3.5 xl:hover:gap-6 bg-brand-grey text-white text-base md:text-base xl:text-xl font-medium rounded-md overflow-hidden active:bg-black transition-all duration-300 mt-10 md:mt-20 xl:mt-28 px-5 sm:px-10 md:px-5 xl:px-7"
           >
             Перейти в каталог
             <svg
@@ -562,44 +588,13 @@
               viewBox="0 0 58 20"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-12 lg:h-auto lg:w-auto fill-brand-green group-hover:translate-x-3 group-hover:fill-brand-grey hover:transition-all duration-300"
+              class="w-0 h-4 group-hover:w-9 xs:group-hover:w-12 md:group-hover:w-12 xl:h-auto fill-brand-green -translate-x-[500%] group-hover:translate-x-0 transition-all duration-300"
             >
               <path
                 d="M56.8839 10.8839C57.372 10.3957 57.372 9.60427 56.8839 9.11612L48.9289 1.16117C48.4408 0.67301 47.6493 0.67301 47.1612 1.16117C46.673 1.64932 46.673 2.44078 47.1612 2.92893L54.2322 10L47.1612 17.0711C46.673 17.5592 46.673 18.3507 47.1612 18.8388C47.6493 19.327 48.4408 19.327 48.9289 18.8388L56.8839 10.8839ZM0 11.25H56V8.75H0V11.25Z"
               />
             </svg>
           </button>
-          <!-- Navigation Button on Mobile -->
-          <div class="flex lg:hidden items-center justify-center gap-7 mt-14">
-            <button class="prev w-8 h-5 grid place-content-center">
-              <svg
-                width="31"
-                height="16"
-                viewBox="0 0 31 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.292892 8.7071C-0.0976315 8.31658 -0.0976314 7.68341 0.292893 7.29289L6.65686 0.92893C7.04738 0.538406 7.68054 0.538406 8.07107 0.92893C8.46159 1.31945 8.46159 1.95262 8.07107 2.34314L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.7071ZM31 9L1 9L1 7L31 7L31 9Z"
-                  fill="#232323"
-                />
-              </svg>
-            </button>
-            <button class="next w-8 h-5 grid place-content-center">
-              <svg
-                width="31"
-                height="16"
-                viewBox="0 0 31 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M30.7071 8.7071C31.0976 8.31658 31.0976 7.68341 30.7071 7.29289L24.3431 0.92893C23.9526 0.538406 23.3195 0.538406 22.9289 0.92893C22.5384 1.31945 22.5384 1.95262 22.9289 2.34314L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.7071ZM8.74228e-08 9L30 9L30 7L-8.74228e-08 7L8.74228e-08 9Z"
-                  fill="#232323"
-                />
-              </svg>
-            </button>
-          </div>
         </div>
       </section>
 
@@ -607,10 +602,12 @@
       <section id="coupon" class="">
         <div class="bg-brand-grey">
           <div
-            class="max-w-base mx-auto relative overflow-hidden space-y-10 lg:space-y-0 pt-8 lg:pt-[3.75rem] lg:pb-12 px-5 3xl:px-10"
+            class="sm:h-[46.875rem] md:h-auto max-w-base mx-auto relative overflow-hidden space-y-10 lg:space-y-0 pt-8 lg:pt-[3.75rem] lg:pb-12 px-5 3xl:px-10"
           >
             <!-- Texts -->
-            <div class="relative z-10 space-y-10 lg:space-y-24">
+            <div
+              class="h-full flex flex-col justify-between relative z-10 space-y-10 lg:space-y-24 pb-7 sm:pb-12"
+            >
               <div class="lg:space-y-16">
                 <h2 class="max-w-5xl pr-10 text-white">
                   Получи купон на первую покупку на 300 рублей по промокоду
@@ -618,7 +615,7 @@
                 </h2>
                 <!-- Button -->
                 <button
-                  class="h-16 lg:h-70 mx-auto lg:mx-0 group flex items-center gap-6 bg-brand-green text-brand-grey text-base lg:text-xl font-medium border-2 border-brand-grey rounded-md hover:bg-white transition-all duration-300 mt-12 lg:mt-70 px-7"
+                  class="h-12 sm:h-[6.25rem] md:h-50 xl:h-70 w-fit md:w-auto group flex items-center hover:gap-3.5 xl:hover:gap-6 bg-brand-green text-brand-grey text-base sm:text-26 md:text-base xl:text-xl font-medium rounded-md overflow-hidden active:bg-black transition-all duration-300 mt-10 sm:mt-20 px-5 sm:px-10 md:px-5 xl:px-7"
                 >
                   Перейти в каталог
                   <svg
@@ -627,7 +624,7 @@
                     viewBox="0 0 58 20"
                     fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-4 w-12 lg:h-auto lg:w-auto fill-brand-grey group-hover:translate-x-3 hover:transition-all duration-300"
+                    class="w-0 h-4 group-hover:w-9 xs:group-hover:w-12 sm:h-8 sm:group-hover:w-20 md:group-hover:w-12 xl:h-auto fill-brand-grey -translate-x-[500%] group-hover:translate-x-0 transition-all duration-300"
                   >
                     <path
                       d="M56.8839 10.8839C57.372 10.3957 57.372 9.60427 56.8839 9.11612L48.9289 1.16117C48.4408 0.67301 47.6493 0.67301 47.1612 1.16117C46.673 1.64932 46.673 2.44078 47.1612 2.92893L54.2322 10L47.1612 17.0711C46.673 17.5592 46.673 18.3507 47.1612 18.8388C47.6493 19.327 48.4408 19.327 48.9289 18.8388L56.8839 10.8839ZM0 11.25H56V8.75H0V11.25Z"
@@ -636,7 +633,9 @@
                 </button>
               </div>
 
-              <p class="max-w-xl text-lg sm:text-xl text-white/70">
+              <p
+                class="max-w-[15.625rem] sm:max-w-[21.25rem] md:max-w-xl text-sm sm:text-xl text-white/70"
+              >
                 Период действия купона: с (15).02.2024г по (15).04.2024г .  В
                 акции не участвует авто парфюм.
               </p>
@@ -646,7 +645,7 @@
             <img
               src="./assets/images/img-coupon.png"
               alt="Image Coupon"
-              class="static ml-auto lg:absolute -top-12 lg:-right-1/3 xl:-right-[20%] 2xl:right-0"
+              class="absolute -bottom-[10%] md:-bottom-1/4 -right-1/3 lg:-top-10 xl:-right-[20%] 2xl:right-0"
             />
           </div>
         </div>
@@ -805,31 +804,31 @@
           <div class="flex items-center justify-between">
             <h3>Диффузоры для дома и офиса</h3>
             <div class="hidden lg:flex items-center gap-7">
-              <button class="prev w-8 h-5 !block">
+              <button class="prev w-8 h-5 !block group">
                 <svg
                   width="31"
                   height="16"
                   viewBox="0 0 31 16"
-                  fill="none"
+                  fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
+                  class="fill-brand-grey hover:fill-brand-grey/50 group-active:fill-brand-grey/50"
                 >
                   <path
                     d="M0.292892 8.7071C-0.0976315 8.31658 -0.0976314 7.68341 0.292893 7.29289L6.65686 0.92893C7.04738 0.538406 7.68054 0.538406 8.07107 0.92893C8.46159 1.31945 8.46159 1.95262 8.07107 2.34314L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.7071ZM31 9L1 9L1 7L31 7L31 9Z"
-                    fill="#232323"
                   />
                 </svg>
               </button>
-              <button class="next w-8 h-5 !block">
+              <button class="next w-8 h-5 !block group">
                 <svg
                   width="31"
                   height="16"
                   viewBox="0 0 31 16"
-                  fill="none"
+                  fill="currenColor"
                   xmlns="http://www.w3.org/2000/svg"
+                  class="fill-brand-grey hover:fill-brand-grey/50 group-active:fill-brand-grey/50"
                 >
                   <path
                     d="M30.7071 8.7071C31.0976 8.31658 31.0976 7.68341 30.7071 7.29289L24.3431 0.92893C23.9526 0.538406 23.3195 0.538406 22.9289 0.92893C22.5384 1.31945 22.5384 1.95262 22.9289 2.34314L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.7071ZM8.74228e-08 9L30 9L30 7L-8.74228e-08 7L8.74228e-08 9Z"
-                    fill="#232323"
                   />
                 </svg>
               </button>
@@ -840,19 +839,19 @@
             <div class="swiper-wrapper">
               <!-- Slide -->
               <div class="swiper-slide">
-                <div class="space-y-5 lg:space-y-6 bg-white">
+                <a href="#" class="space-y-5 lg:space-y-6 bg-white group">
                   <!-- Top -->
                   <div
-                    class="h-96 lg:h-[27rem] relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
+                    class="h-[18.75rem] 2xl:h-96 relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
                   >
-                    <!-- New -->
+                    <!-- Season Spring -->
                     <span
-                      class="h-8 shrink-0 absolute top-4 left-4 z-10 grid place-content-center text-sm font-semibold bg-brand-green rounded-full px-2.5"
-                      >Новинка</span
+                      class="h-5 sm:h-8 shrink-0 absolute top-3 left-3 sm:top-4 sm:left-4 z-10 grid place-content-center text-xs sm:text-sm font-semibold bg-white rounded-full px-2 sm:px-2.5"
+                      >Сезон весна 2024</span
                     >
                     <!-- Like Button -->
                     <button
-                      class="w-10 h-10 shrink-0 absolute top-4 right-4 z-10 grid place-content-center bg-brand-grey rounded-full"
+                      class="w-7 h-7 sm:w-10 sm:h-10 shrink-0 absolute top-2.5 right-3 sm:top-4 sm:right-4 z-10 grid place-content-center bg-white rounded-full"
                     >
                       <svg
                         width="20"
@@ -860,64 +859,7 @@
                         viewBox="0 0 20 19"
                         fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="fill-brand-green"
-                      >
-                        <path
-                          d="M10 18.35L8.55 17.03C3.4 12.36 0 9.27 0 5.5C0 2.41 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.08C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.41 20 5.5C20 9.27 16.6 12.36 11.45 17.03L10 18.35Z"
-                        />
-                      </svg>
-                    </button>
-                    <img
-                      src="./assets/images/img-product-1.png"
-                      alt="Product Image"
-                      class="w-365 h-365 object-cover group-hover:scale-125 transition-all duration-300"
-                    />
-                  </div>
-                  <!-- Bottom -->
-                  <div class="space-y-5 lg:space-y-6">
-                    <!-- Text -->
-                    <a
-                      href="#"
-                      class="text-2xl lg:text-26 hover:text-brand-green transition-all duration-300 pr-5"
-                    >
-                      Ароматический диффузор  Big-Rd-02 Kirke,
-                      <span class="text-brand-grey/40 font-medium">120 мл</span>
-                    </a>
-                    <!-- Cost -->
-                    <div class="flex items-center gap-6 font-medium">
-                      <p class="text-3xl lg:text-4xl">2 390 ₽</p>
-                      <p
-                        class="text-brand-grey/40 text-xl lg:text-25 line-through"
-                      >
-                        4 200 ₽
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Slide -->
-              <div class="swiper-slide">
-                <div class="space-y-5 lg:space-y-6 bg-white">
-                  <!-- Top -->
-                  <div
-                    class="h-96 lg:h-[27rem] relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
-                  >
-                    <!-- New -->
-                    <span
-                      class="w-20 h-8 shrink-0 absolute top-4 left-4 z-10 grid place-content-center text-sm font-semibold bg-brand-green rounded-full px-2.5"
-                      >Новинка</span
-                    >
-                    <!-- Like Button -->
-                    <button
-                      class="w-10 h-10 shrink-0 absolute top-4 right-4 z-10 grid place-content-center bg-white rounded-full"
-                    >
-                      <svg
-                        width="20"
-                        height="19"
-                        viewBox="0 0 20 19"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="fill-brand-grey/15"
+                        class="w-3.5 h-3.5 sm:w-auto sm:h-auto fill-brand-grey/15"
                       >
                         <path
                           d="M10 18.35L8.55 17.03C3.4 12.36 0 9.27 0 5.5C0 2.41 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.08C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.41 20 5.5C20 9.27 16.6 12.36 11.45 17.03L10 18.35Z"
@@ -927,46 +869,47 @@
                     <img
                       src="./assets/images/img-product-2.png"
                       alt="Product Image"
-                      class="w-365 h-365 object-cover group-hover:scale-125 transition-all duration-300"
+                      class="w-56 h-60 2xl:w-365 2xl:h-365 object-cover group-hover:scale-110 transition-all duration-300"
                     />
                   </div>
                   <!-- Bottom -->
-                  <div class="space-y-5 lg:space-y-6">
+                  <div
+                    class="space-y-4 xl:space-y-6 mt-4 xl:mt-6 group-hover:text-brand-grey-500 transition-all duration-100"
+                  >
                     <!-- Text -->
-                    <a
-                      href="#"
-                      class="text-2xl lg:text-26 hover:text-brand-green transition-all duration-300 pr-5"
+                    <p
+                      class="sm:text-xl 2xl:text-26 transition-all duration-300 pr-5"
                     >
                       Парфюмерная вода W-120 50 ML Parfum,
                       <span class="text-brand-grey/40 font-medium">50 мл</span>
-                    </a>
+                    </p>
                     <!-- Cost -->
                     <div class="flex items-center gap-6 font-medium">
-                      <p class="text-3xl lg:text-4xl">1 490 ₽</p>
+                      <p class="text-xl sm:text-28 lg:text-4xl">1 490 ₽</p>
                       <p
-                        class="text-brand-grey/40 text-xl lg:text-25 line-through"
+                        class="text-brand-grey/40 sm:text-xl lg:text-25 line-through"
                       >
                         4 200 ₽
                       </p>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <!-- Slide -->
               <div class="swiper-slide">
-                <div class="space-y-5 lg:space-y-6 bg-white">
+                <a href="#" class="space-y-5 lg:space-y-6 bg-white group">
                   <!-- Top -->
                   <div
-                    class="h-96 lg:h-[27rem] relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
+                    class="h-[18.75rem] 2xl:h-96 relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
                   >
                     <!-- New -->
                     <span
-                      class="h-8 shrink-0 absolute top-4 left-4 z-10 grid place-content-center text-sm font-semibold bg-white rounded-full px-2.5"
-                      >Сезон весна 2024</span
+                      class="h-5 sm:h-8 shrink-0 absolute top-3 left-3 sm:top-4 sm:left-4 z-10 grid place-content-center text-xs sm:text-sm font-semibold bg-brand-green rounded-full px-2 sm:px-2.5"
+                      >Новинка</span
                     >
                     <!-- Like Button -->
                     <button
-                      class="w-10 h-10 shrink-0 absolute top-4 right-4 z-10 grid place-content-center bg-white rounded-full"
+                      class="w-7 h-7 sm:w-10 sm:h-10 shrink-0 absolute top-2.5 right-3 sm:top-4 sm:right-4 z-10 grid place-content-center bg-brand-grey rounded-full"
                     >
                       <svg
                         width="20"
@@ -974,7 +917,65 @@
                         viewBox="0 0 20 19"
                         fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="fill-brand-grey/15"
+                        class="w-3.5 h-3.5 sm:w-auto sm:h-auto fill-brand-green"
+                      >
+                        <path
+                          d="M10 18.35L8.55 17.03C3.4 12.36 0 9.27 0 5.5C0 2.41 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.08C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.41 20 5.5C20 9.27 16.6 12.36 11.45 17.03L10 18.35Z"
+                        />
+                      </svg>
+                    </button>
+                    <img
+                      src="./assets/images/img-product-1.png"
+                      alt="Product Image"
+                      class="w-56 h-60 2xl:w-365 2xl:h-365 object-cover group-hover:scale-110 transition-all duration-300"
+                    />
+                  </div>
+                  <!-- Bottom -->
+                  <div
+                    class="space-y-4 xl:space-y-6 mt-4 xl:mt-6 group-hover:text-brand-grey-500 transition-all duration-100"
+                  >
+                    <!-- Text -->
+                    <p
+                      class="sm:text-xl 2xl:text-26 transition-all duration-300 pr-5"
+                    >
+                      Ароматический диффузор  Big-Rd-02 Kirke,
+                      <span class="text-brand-grey/40 font-medium">120 мл</span>
+                    </p>
+                    <!-- Cost -->
+                    <div class="flex items-center gap-6 font-medium">
+                      <p class="text-xl sm:text-28 lg:text-4xl">2 390 ₽</p>
+                      <p
+                        class="text-brand-grey/40 sm:text-xl lg:text-25 line-through"
+                      >
+                        4 200 ₽
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Slide -->
+              <div class="swiper-slide">
+                <a href="#" class="space-y-5 lg:space-y-6 bg-white group">
+                  <!-- Top -->
+                  <div
+                    class="h-[18.75rem] 2xl:h-96 relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
+                  >
+                    <!-- Season Spring -->
+                    <span
+                      class="h-5 sm:h-8 shrink-0 absolute top-3 left-3 sm:top-4 sm:left-4 z-10 grid place-content-center text-xs sm:text-sm font-semibold bg-white rounded-full px-2 sm:px-2.5"
+                      >Сезон весна 2024</span
+                    >
+                    <!-- Like Button -->
+                    <button
+                      class="w-7 h-7 sm:w-10 sm:h-10 shrink-0 absolute top-2.5 right-3 sm:top-4 sm:right-4 z-10 grid place-content-center bg-white rounded-full"
+                    >
+                      <svg
+                        width="20"
+                        height="19"
+                        viewBox="0 0 20 19"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-3.5 h-3.5 sm:w-auto sm:h-auto fill-brand-grey/15"
                       >
                         <path
                           d="M10 18.35L8.55 17.03C3.4 12.36 0 9.27 0 5.5C0 2.41 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.08C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.41 20 5.5C20 9.27 16.6 12.36 11.45 17.03L10 18.35Z"
@@ -984,46 +985,47 @@
                     <img
                       src="./assets/images/img-product-3.png"
                       alt="Product Image"
-                      class="w-365 h-365 object-cover group-hover:scale-125 transition-all duration-300"
+                      class="w-56 h-60 2xl:w-365 2xl:h-365 object-cover group-hover:scale-110 transition-all duration-300"
                     />
                   </div>
                   <!-- Bottom -->
-                  <div class="space-y-5 lg:space-y-6">
+                  <div
+                    class="space-y-4 xl:space-y-6 mt-4 xl:mt-6 group-hover:text-brand-grey-500 transition-all duration-100"
+                  >
                     <!-- Text -->
-                    <a
-                      href="#"
-                      class="text-2xl lg:text-26 hover:text-brand-green transition-all duration-300 pr-5"
+                    <p
+                      class="sm:text-xl 2xl:text-26 transition-all duration-300 pr-5"
                     >
                       Парфюмерная вода Big-E-600-2 Bighill
                       <span class="text-brand-grey/40 font-medium"></span>
-                    </a>
+                    </p>
                     <!-- Cost -->
                     <div class="flex items-center gap-6 font-medium">
-                      <p class="text-3xl lg:text-4xl">1 490 ₽</p>
+                      <p class="text-xl sm:text-28 lg:text-4xl">2 190 ₽</p>
                       <p
-                        class="text-brand-grey/40 text-xl lg:text-25 line-through"
+                        class="text-brand-grey/40 sm:text-xl lg:text-25 line-through"
                       >
                         4 200 ₽
                       </p>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <!-- Slide -->
               <div class="swiper-slide">
-                <div class="space-y-5 lg:space-y-6 bg-white">
+                <a href="#" class="space-y-5 lg:space-y-6 bg-white group">
                   <!-- Top -->
                   <div
-                    class="h-96 lg:h-[27rem] relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
+                    class="h-[18.75rem] 2xl:h-96 relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
                   >
-                    <!-- New -->
+                    <!-- Season Spring -->
                     <span
-                      class="h-8 shrink-0 absolute top-4 left-4 z-10 grid place-content-center text-sm font-semibold bg-white rounded-full px-2.5"
+                      class="h-5 sm:h-8 shrink-0 absolute top-3 left-3 sm:top-4 sm:left-4 z-10 grid place-content-center text-xs sm:text-sm font-semibold bg-white rounded-full px-2 sm:px-2.5"
                       >Сезон весна 2024</span
                     >
                     <!-- Like Button -->
                     <button
-                      class="w-10 h-10 shrink-0 absolute top-4 right-4 z-10 grid place-content-center bg-white rounded-full"
+                      class="w-7 h-7 sm:w-10 sm:h-10 shrink-0 absolute top-2.5 right-3 sm:top-4 sm:right-4 z-10 grid place-content-center bg-white rounded-full"
                     >
                       <svg
                         width="20"
@@ -1031,7 +1033,7 @@
                         viewBox="0 0 20 19"
                         fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="fill-brand-grey/15"
+                        class="w-3.5 h-3.5 sm:w-auto sm:h-auto fill-brand-grey/15"
                       >
                         <path
                           d="M10 18.35L8.55 17.03C3.4 12.36 0 9.27 0 5.5C0 2.41 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.08C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.41 20 5.5C20 9.27 16.6 12.36 11.45 17.03L10 18.35Z"
@@ -1041,36 +1043,68 @@
                     <img
                       src="./assets/images/img-product-4.png"
                       alt="Product Image"
-                      class="w-365 h-365 object-cover group-hover:scale-125 transition-all duration-300"
+                      class="w-56 h-60 2xl:w-365 2xl:h-365 object-cover group-hover:scale-110 transition-all duration-300"
                     />
                   </div>
                   <!-- Bottom -->
-                  <div class="space-y-5 lg:space-y-6">
+                  <div
+                    class="space-y-4 xl:space-y-6 mt-4 xl:mt-6 group-hover:text-brand-grey-500 transition-all duration-100"
+                  >
                     <!-- Text -->
-                    <a
-                      href="#"
-                      class="text-2xl lg:text-26 hover:text-brand-green transition-all duration-300 pr-5"
+                    <p
+                      class="sm:text-xl 2xl:text-26 transition-all duration-300 pr-5"
                     >
                       Автопарфюм Oto Kokusu Okyanus (Океан),
                       <span class="text-brand-grey/40 font-medium">10 мл</span>
-                    </a>
+                    </p>
                     <!-- Cost -->
                     <div class="flex items-center gap-6 font-medium">
-                      <p class="text-3xl lg:text-4xl">1 350 ₽</p>
+                      <p class="text-xl sm:text-28 lg:text-4xl">350 ₽</p>
                       <p
-                        class="text-brand-grey/40 text-xl lg:text-25 line-through"
+                        class="text-brand-grey/40 sm:text-xl lg:text-25 line-through"
                       >
                         1 700 ₽
                       </p>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
+          <!-- Navigation Button on Mobile -->
+          <div class="flex lg:hidden items-center justify-center gap-7 mt-14">
+            <button class="prev w-8 h-5 !block group">
+              <svg
+                width="31"
+                height="16"
+                viewBox="0 0 31 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-brand-grey hover:fill-brand-grey/50 group-active:fill-brand-grey/50"
+              >
+                <path
+                  d="M0.292892 8.7071C-0.0976315 8.31658 -0.0976314 7.68341 0.292893 7.29289L6.65686 0.92893C7.04738 0.538406 7.68054 0.538406 8.07107 0.92893C8.46159 1.31945 8.46159 1.95262 8.07107 2.34314L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.7071ZM31 9L1 9L1 7L31 7L31 9Z"
+                />
+              </svg>
+            </button>
+            <button class="next w-8 h-5 !block group">
+              <svg
+                width="31"
+                height="16"
+                viewBox="0 0 31 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-brand-grey hover:fill-brand-grey/50 group-active:fill-brand-grey/50"
+              >
+                <path
+                  d="M30.7071 8.7071C31.0976 8.31658 31.0976 7.68341 30.7071 7.29289L24.3431 0.92893C23.9526 0.538406 23.3195 0.538406 22.9289 0.92893C22.5384 1.31945 22.5384 1.95262 22.9289 2.34314L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.7071ZM8.74228e-08 9L30 9L30 7L-8.74228e-08 7L8.74228e-08 9Z"
+                />
+              </svg>
+            </button>
+          </div>
           <!-- Button -->
           <button
-            class="h-16 lg:h-70 mx-auto lg:mx-0 group flex items-center gap-6 bg-brand-grey text-white text-base lg:text-xl font-medium border-2 border-brand-grey rounded-md hover:bg-white hover:text-brand-grey transition-all duration-300 mt-12 lg:mt-70 px-7"
+            class="h-12 md:h-50 xl:h-70 w-fit md:w-auto mx-auto lg:mx-0 group flex items-center hover:gap-3.5 xl:hover:gap-6 bg-brand-grey text-white text-base md:text-base xl:text-xl font-medium rounded-md overflow-hidden active:bg-black transition-all duration-300 mt-10 md:mt-20 xl:mt-28 px-5 sm:px-10 md:px-5 xl:px-7"
           >
             Перейти в каталог
             <svg
@@ -1079,44 +1113,13 @@
               viewBox="0 0 58 20"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-12 lg:h-auto lg:w-auto fill-brand-green group-hover:translate-x-3 group-hover:fill-brand-grey hover:transition-all duration-300"
+              class="w-0 h-4 group-hover:w-9 xs:group-hover:w-12 md:group-hover:w-12 xl:h-auto fill-brand-green -translate-x-[500%] group-hover:translate-x-0 transition-all duration-300"
             >
               <path
                 d="M56.8839 10.8839C57.372 10.3957 57.372 9.60427 56.8839 9.11612L48.9289 1.16117C48.4408 0.67301 47.6493 0.67301 47.1612 1.16117C46.673 1.64932 46.673 2.44078 47.1612 2.92893L54.2322 10L47.1612 17.0711C46.673 17.5592 46.673 18.3507 47.1612 18.8388C47.6493 19.327 48.4408 19.327 48.9289 18.8388L56.8839 10.8839ZM0 11.25H56V8.75H0V11.25Z"
               />
             </svg>
           </button>
-          <!-- Navigation Button on Mobile -->
-          <div class="flex lg:hidden items-center justify-center gap-7 mt-14">
-            <button class="prev w-8 h-5 grid place-content-center">
-              <svg
-                width="31"
-                height="16"
-                viewBox="0 0 31 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.292892 8.7071C-0.0976315 8.31658 -0.0976314 7.68341 0.292893 7.29289L6.65686 0.92893C7.04738 0.538406 7.68054 0.538406 8.07107 0.92893C8.46159 1.31945 8.46159 1.95262 8.07107 2.34314L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.7071ZM31 9L1 9L1 7L31 7L31 9Z"
-                  fill="#232323"
-                />
-              </svg>
-            </button>
-            <button class="next w-8 h-5 grid place-content-center">
-              <svg
-                width="31"
-                height="16"
-                viewBox="0 0 31 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M30.7071 8.7071C31.0976 8.31658 31.0976 7.68341 30.7071 7.29289L24.3431 0.92893C23.9526 0.538406 23.3195 0.538406 22.9289 0.92893C22.5384 1.31945 22.5384 1.95262 22.9289 2.34314L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.7071ZM8.74228e-08 9L30 9L30 7L-8.74228e-08 7L8.74228e-08 9Z"
-                  fill="#232323"
-                />
-              </svg>
-            </button>
-          </div>
         </div>
       </section>
 
@@ -1165,37 +1168,37 @@
       </section>
 
       <!-- For Car -->
-      <section id="forCars" class="xl:pt-40">
+      <section id="forCar" class="xl:pt-40">
         <div class="max-w-base mx-auto px-5 3xl:px-10">
           <!-- Title & Slider Buttons -->
           <div class="flex items-center justify-between">
             <h3>Ароматы для автомобиля</h3>
             <div class="hidden lg:flex items-center gap-7">
-              <button class="prev w-8 h-5 !block">
+              <button class="prev w-8 h-5 !block group">
                 <svg
                   width="31"
                   height="16"
                   viewBox="0 0 31 16"
-                  fill="none"
+                  fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
+                  class="fill-brand-grey hover:fill-brand-grey/50 group-active:fill-brand-grey/50"
                 >
                   <path
                     d="M0.292892 8.7071C-0.0976315 8.31658 -0.0976314 7.68341 0.292893 7.29289L6.65686 0.92893C7.04738 0.538406 7.68054 0.538406 8.07107 0.92893C8.46159 1.31945 8.46159 1.95262 8.07107 2.34314L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.7071ZM31 9L1 9L1 7L31 7L31 9Z"
-                    fill="#232323"
                   />
                 </svg>
               </button>
-              <button class="next w-8 h-5 !block">
+              <button class="next w-8 h-5 !block group">
                 <svg
                   width="31"
                   height="16"
                   viewBox="0 0 31 16"
-                  fill="none"
+                  fill="currenColor"
                   xmlns="http://www.w3.org/2000/svg"
+                  class="fill-brand-grey hover:fill-brand-grey/50 group-active:fill-brand-grey/50"
                 >
                   <path
                     d="M30.7071 8.7071C31.0976 8.31658 31.0976 7.68341 30.7071 7.29289L24.3431 0.92893C23.9526 0.538406 23.3195 0.538406 22.9289 0.92893C22.5384 1.31945 22.5384 1.95262 22.9289 2.34314L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.7071ZM8.74228e-08 9L30 9L30 7L-8.74228e-08 7L8.74228e-08 9Z"
-                    fill="#232323"
                   />
                 </svg>
               </button>
@@ -1206,19 +1209,19 @@
             <div class="swiper-wrapper">
               <!-- Slide -->
               <div class="swiper-slide">
-                <div class="space-y-5 lg:space-y-6 bg-white">
+                <a href="#" class="space-y-5 lg:space-y-6 bg-white group">
                   <!-- Top -->
                   <div
-                    class="h-96 lg:h-[27rem] relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
+                    class="h-[18.75rem] 2xl:h-96 relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
                   >
-                    <!-- New -->
+                    <!-- Season Spring -->
                     <span
-                      class="h-8 shrink-0 absolute top-4 left-4 z-10 grid place-content-center text-sm font-semibold bg-brand-green rounded-full px-2.5"
-                      >Новинка</span
+                      class="h-5 sm:h-8 shrink-0 absolute top-3 left-3 sm:top-4 sm:left-4 z-10 grid place-content-center text-xs sm:text-sm font-semibold bg-white rounded-full px-2 sm:px-2.5"
+                      >Сезон весна 2024</span
                     >
                     <!-- Like Button -->
                     <button
-                      class="w-10 h-10 shrink-0 absolute top-4 right-4 z-10 grid place-content-center bg-brand-grey rounded-full"
+                      class="w-7 h-7 sm:w-10 sm:h-10 shrink-0 absolute top-2.5 right-3 sm:top-4 sm:right-4 z-10 grid place-content-center bg-white rounded-full"
                     >
                       <svg
                         width="20"
@@ -1226,64 +1229,7 @@
                         viewBox="0 0 20 19"
                         fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="fill-brand-green"
-                      >
-                        <path
-                          d="M10 18.35L8.55 17.03C3.4 12.36 0 9.27 0 5.5C0 2.41 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.08C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.41 20 5.5C20 9.27 16.6 12.36 11.45 17.03L10 18.35Z"
-                        />
-                      </svg>
-                    </button>
-                    <img
-                      src="./assets/images/img-product-1.png"
-                      alt="Product Image"
-                      class="w-365 h-365 object-cover group-hover:scale-125 transition-all duration-300"
-                    />
-                  </div>
-                  <!-- Bottom -->
-                  <div class="space-y-5 lg:space-y-6">
-                    <!-- Text -->
-                    <a
-                      href="#"
-                      class="text-2xl lg:text-26 hover:text-brand-green transition-all duration-300 pr-5"
-                    >
-                      Ароматический диффузор  Big-Rd-02 Kirke,
-                      <span class="text-brand-grey/40 font-medium">120 мл</span>
-                    </a>
-                    <!-- Cost -->
-                    <div class="flex items-center gap-6 font-medium">
-                      <p class="text-3xl lg:text-4xl">2 390 ₽</p>
-                      <p
-                        class="text-brand-grey/40 text-xl lg:text-25 line-through"
-                      >
-                        4 200 ₽
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Slide -->
-              <div class="swiper-slide">
-                <div class="space-y-5 lg:space-y-6 bg-white">
-                  <!-- Top -->
-                  <div
-                    class="h-96 lg:h-[27rem] relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
-                  >
-                    <!-- New -->
-                    <span
-                      class="w-20 h-8 shrink-0 absolute top-4 left-4 z-10 grid place-content-center text-sm font-semibold bg-brand-green rounded-full px-2.5"
-                      >Новинка</span
-                    >
-                    <!-- Like Button -->
-                    <button
-                      class="w-10 h-10 shrink-0 absolute top-4 right-4 z-10 grid place-content-center bg-white rounded-full"
-                    >
-                      <svg
-                        width="20"
-                        height="19"
-                        viewBox="0 0 20 19"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="fill-brand-grey/15"
+                        class="w-3.5 h-3.5 sm:w-auto sm:h-auto fill-brand-grey/15"
                       >
                         <path
                           d="M10 18.35L8.55 17.03C3.4 12.36 0 9.27 0 5.5C0 2.41 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.08C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.41 20 5.5C20 9.27 16.6 12.36 11.45 17.03L10 18.35Z"
@@ -1293,46 +1239,47 @@
                     <img
                       src="./assets/images/img-product-2.png"
                       alt="Product Image"
-                      class="w-365 h-365 object-cover group-hover:scale-125 transition-all duration-300"
+                      class="w-56 h-60 2xl:w-365 2xl:h-365 object-cover group-hover:scale-110 transition-all duration-300"
                     />
                   </div>
                   <!-- Bottom -->
-                  <div class="space-y-5 lg:space-y-6">
+                  <div
+                    class="space-y-4 xl:space-y-6 mt-4 xl:mt-6 group-hover:text-brand-grey-500 transition-all duration-100"
+                  >
                     <!-- Text -->
-                    <a
-                      href="#"
-                      class="text-2xl lg:text-26 hover:text-brand-green transition-all duration-300 pr-5"
+                    <p
+                      class="sm:text-xl 2xl:text-26 transition-all duration-300 pr-5"
                     >
                       Парфюмерная вода W-120 50 ML Parfum,
                       <span class="text-brand-grey/40 font-medium">50 мл</span>
-                    </a>
+                    </p>
                     <!-- Cost -->
                     <div class="flex items-center gap-6 font-medium">
-                      <p class="text-3xl lg:text-4xl">1 490 ₽</p>
+                      <p class="text-xl sm:text-28 lg:text-4xl">1 490 ₽</p>
                       <p
-                        class="text-brand-grey/40 text-xl lg:text-25 line-through"
+                        class="text-brand-grey/40 sm:text-xl lg:text-25 line-through"
                       >
                         4 200 ₽
                       </p>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <!-- Slide -->
               <div class="swiper-slide">
-                <div class="space-y-5 lg:space-y-6 bg-white">
+                <a href="#" class="space-y-5 lg:space-y-6 bg-white group">
                   <!-- Top -->
                   <div
-                    class="h-96 lg:h-[27rem] relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
+                    class="h-[18.75rem] 2xl:h-96 relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
                   >
                     <!-- New -->
                     <span
-                      class="h-8 shrink-0 absolute top-4 left-4 z-10 grid place-content-center text-sm font-semibold bg-white rounded-full px-2.5"
-                      >Сезон весна 2024</span
+                      class="h-5 sm:h-8 shrink-0 absolute top-3 left-3 sm:top-4 sm:left-4 z-10 grid place-content-center text-xs sm:text-sm font-semibold bg-brand-green rounded-full px-2 sm:px-2.5"
+                      >Новинка</span
                     >
                     <!-- Like Button -->
                     <button
-                      class="w-10 h-10 shrink-0 absolute top-4 right-4 z-10 grid place-content-center bg-white rounded-full"
+                      class="w-7 h-7 sm:w-10 sm:h-10 shrink-0 absolute top-2.5 right-3 sm:top-4 sm:right-4 z-10 grid place-content-center bg-brand-grey rounded-full"
                     >
                       <svg
                         width="20"
@@ -1340,7 +1287,65 @@
                         viewBox="0 0 20 19"
                         fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="fill-brand-grey/15"
+                        class="w-3.5 h-3.5 sm:w-auto sm:h-auto fill-brand-green"
+                      >
+                        <path
+                          d="M10 18.35L8.55 17.03C3.4 12.36 0 9.27 0 5.5C0 2.41 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.08C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.41 20 5.5C20 9.27 16.6 12.36 11.45 17.03L10 18.35Z"
+                        />
+                      </svg>
+                    </button>
+                    <img
+                      src="./assets/images/img-product-1.png"
+                      alt="Product Image"
+                      class="w-56 h-60 2xl:w-365 2xl:h-365 object-cover group-hover:scale-110 transition-all duration-300"
+                    />
+                  </div>
+                  <!-- Bottom -->
+                  <div
+                    class="space-y-4 xl:space-y-6 mt-4 xl:mt-6 group-hover:text-brand-grey-500 transition-all duration-100"
+                  >
+                    <!-- Text -->
+                    <p
+                      class="sm:text-xl 2xl:text-26 transition-all duration-300 pr-5"
+                    >
+                      Ароматический диффузор  Big-Rd-02 Kirke,
+                      <span class="text-brand-grey/40 font-medium">120 мл</span>
+                    </p>
+                    <!-- Cost -->
+                    <div class="flex items-center gap-6 font-medium">
+                      <p class="text-xl sm:text-28 lg:text-4xl">2 390 ₽</p>
+                      <p
+                        class="text-brand-grey/40 sm:text-xl lg:text-25 line-through"
+                      >
+                        4 200 ₽
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- Slide -->
+              <div class="swiper-slide">
+                <a href="#" class="space-y-5 lg:space-y-6 bg-white group">
+                  <!-- Top -->
+                  <div
+                    class="h-[18.75rem] 2xl:h-96 relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
+                  >
+                    <!-- Season Spring -->
+                    <span
+                      class="h-5 sm:h-8 shrink-0 absolute top-3 left-3 sm:top-4 sm:left-4 z-10 grid place-content-center text-xs sm:text-sm font-semibold bg-white rounded-full px-2 sm:px-2.5"
+                      >Сезон весна 2024</span
+                    >
+                    <!-- Like Button -->
+                    <button
+                      class="w-7 h-7 sm:w-10 sm:h-10 shrink-0 absolute top-2.5 right-3 sm:top-4 sm:right-4 z-10 grid place-content-center bg-white rounded-full"
+                    >
+                      <svg
+                        width="20"
+                        height="19"
+                        viewBox="0 0 20 19"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-3.5 h-3.5 sm:w-auto sm:h-auto fill-brand-grey/15"
                       >
                         <path
                           d="M10 18.35L8.55 17.03C3.4 12.36 0 9.27 0 5.5C0 2.41 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.08C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.41 20 5.5C20 9.27 16.6 12.36 11.45 17.03L10 18.35Z"
@@ -1350,46 +1355,47 @@
                     <img
                       src="./assets/images/img-product-3.png"
                       alt="Product Image"
-                      class="w-365 h-365 object-cover group-hover:scale-125 transition-all duration-300"
+                      class="w-56 h-60 2xl:w-365 2xl:h-365 object-cover group-hover:scale-110 transition-all duration-300"
                     />
                   </div>
                   <!-- Bottom -->
-                  <div class="space-y-5 lg:space-y-6">
+                  <div
+                    class="space-y-4 xl:space-y-6 mt-4 xl:mt-6 group-hover:text-brand-grey-500 transition-all duration-100"
+                  >
                     <!-- Text -->
-                    <a
-                      href="#"
-                      class="text-2xl lg:text-26 hover:text-brand-green transition-all duration-300 pr-5"
+                    <p
+                      class="sm:text-xl 2xl:text-26 transition-all duration-300 pr-5"
                     >
                       Парфюмерная вода Big-E-600-2 Bighill
                       <span class="text-brand-grey/40 font-medium"></span>
-                    </a>
+                    </p>
                     <!-- Cost -->
                     <div class="flex items-center gap-6 font-medium">
-                      <p class="text-3xl lg:text-4xl">1 490 ₽</p>
+                      <p class="text-xl sm:text-28 lg:text-4xl">2 190 ₽</p>
                       <p
-                        class="text-brand-grey/40 text-xl lg:text-25 line-through"
+                        class="text-brand-grey/40 sm:text-xl lg:text-25 line-through"
                       >
                         4 200 ₽
                       </p>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <!-- Slide -->
               <div class="swiper-slide">
-                <div class="space-y-5 lg:space-y-6 bg-white">
+                <a href="#" class="space-y-5 lg:space-y-6 bg-white group">
                   <!-- Top -->
                   <div
-                    class="h-96 lg:h-[27rem] relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
+                    class="h-[18.75rem] 2xl:h-96 relative group grid place-content-center bg-brand-grey-100 rounded-2xl overflow-hidden"
                   >
-                    <!-- New -->
+                    <!-- Season Spring -->
                     <span
-                      class="h-8 shrink-0 absolute top-4 left-4 z-10 grid place-content-center text-sm font-semibold bg-white rounded-full px-2.5"
+                      class="h-5 sm:h-8 shrink-0 absolute top-3 left-3 sm:top-4 sm:left-4 z-10 grid place-content-center text-xs sm:text-sm font-semibold bg-white rounded-full px-2 sm:px-2.5"
                       >Сезон весна 2024</span
                     >
                     <!-- Like Button -->
                     <button
-                      class="w-10 h-10 shrink-0 absolute top-4 right-4 z-10 grid place-content-center bg-white rounded-full"
+                      class="w-7 h-7 sm:w-10 sm:h-10 shrink-0 absolute top-2.5 right-3 sm:top-4 sm:right-4 z-10 grid place-content-center bg-white rounded-full"
                     >
                       <svg
                         width="20"
@@ -1397,7 +1403,7 @@
                         viewBox="0 0 20 19"
                         fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="fill-brand-grey/15"
+                        class="w-3.5 h-3.5 sm:w-auto sm:h-auto fill-brand-grey/15"
                       >
                         <path
                           d="M10 18.35L8.55 17.03C3.4 12.36 0 9.27 0 5.5C0 2.41 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.08C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.41 20 5.5C20 9.27 16.6 12.36 11.45 17.03L10 18.35Z"
@@ -1407,36 +1413,68 @@
                     <img
                       src="./assets/images/img-product-4.png"
                       alt="Product Image"
-                      class="w-365 h-365 object-cover group-hover:scale-125 transition-all duration-300"
+                      class="w-56 h-60 2xl:w-365 2xl:h-365 object-cover group-hover:scale-110 transition-all duration-300"
                     />
                   </div>
                   <!-- Bottom -->
-                  <div class="space-y-5 lg:space-y-6">
+                  <div
+                    class="space-y-4 xl:space-y-6 mt-4 xl:mt-6 group-hover:text-brand-grey-500 transition-all duration-100"
+                  >
                     <!-- Text -->
-                    <a
-                      href="#"
-                      class="text-2xl lg:text-26 hover:text-brand-green transition-all duration-300 pr-5"
+                    <p
+                      class="sm:text-xl 2xl:text-26 transition-all duration-300 pr-5"
                     >
                       Автопарфюм Oto Kokusu Okyanus (Океан),
                       <span class="text-brand-grey/40 font-medium">10 мл</span>
-                    </a>
+                    </p>
                     <!-- Cost -->
                     <div class="flex items-center gap-6 font-medium">
-                      <p class="text-3xl lg:text-4xl">1 350 ₽</p>
+                      <p class="text-xl sm:text-28 lg:text-4xl">350 ₽</p>
                       <p
-                        class="text-brand-grey/40 text-xl lg:text-25 line-through"
+                        class="text-brand-grey/40 sm:text-xl lg:text-25 line-through"
                       >
                         1 700 ₽
                       </p>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
+          <!-- Navigation Button on Mobile -->
+          <div class="flex lg:hidden items-center justify-center gap-7 mt-14">
+            <button class="prev w-8 h-5 !block group">
+              <svg
+                width="31"
+                height="16"
+                viewBox="0 0 31 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-brand-grey hover:fill-brand-grey/50 group-active:fill-brand-grey/50"
+              >
+                <path
+                  d="M0.292892 8.7071C-0.0976315 8.31658 -0.0976314 7.68341 0.292893 7.29289L6.65686 0.92893C7.04738 0.538406 7.68054 0.538406 8.07107 0.92893C8.46159 1.31945 8.46159 1.95262 8.07107 2.34314L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.7071ZM31 9L1 9L1 7L31 7L31 9Z"
+                />
+              </svg>
+            </button>
+            <button class="next w-8 h-5 !block group">
+              <svg
+                width="31"
+                height="16"
+                viewBox="0 0 31 16"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-brand-grey hover:fill-brand-grey/50 group-active:fill-brand-grey/50"
+              >
+                <path
+                  d="M30.7071 8.7071C31.0976 8.31658 31.0976 7.68341 30.7071 7.29289L24.3431 0.92893C23.9526 0.538406 23.3195 0.538406 22.9289 0.92893C22.5384 1.31945 22.5384 1.95262 22.9289 2.34314L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.7071ZM8.74228e-08 9L30 9L30 7L-8.74228e-08 7L8.74228e-08 9Z"
+                />
+              </svg>
+            </button>
+          </div>
           <!-- Button -->
           <button
-            class="h-16 lg:h-70 mx-auto lg:mx-0 group flex items-center gap-6 bg-brand-grey text-white text-base lg:text-xl font-medium border-2 border-brand-grey rounded-md hover:bg-white hover:text-brand-grey transition-all duration-300 mt-12 lg:mt-70 px-7"
+            class="h-12 md:h-50 xl:h-70 w-fit md:w-auto mx-auto lg:mx-0 group flex items-center hover:gap-3.5 xl:hover:gap-6 bg-brand-grey text-white text-base md:text-base xl:text-xl font-medium rounded-md overflow-hidden active:bg-black transition-all duration-300 mt-10 md:mt-20 xl:mt-28 px-5 sm:px-10 md:px-5 xl:px-7"
           >
             Перейти в каталог
             <svg
@@ -1445,44 +1483,13 @@
               viewBox="0 0 58 20"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-12 lg:h-auto lg:w-auto fill-brand-green group-hover:translate-x-3 group-hover:fill-brand-grey hover:transition-all duration-300"
+              class="w-0 h-4 group-hover:w-9 xs:group-hover:w-12 md:group-hover:w-12 xl:h-auto fill-brand-green -translate-x-[500%] group-hover:translate-x-0 transition-all duration-300"
             >
               <path
                 d="M56.8839 10.8839C57.372 10.3957 57.372 9.60427 56.8839 9.11612L48.9289 1.16117C48.4408 0.67301 47.6493 0.67301 47.1612 1.16117C46.673 1.64932 46.673 2.44078 47.1612 2.92893L54.2322 10L47.1612 17.0711C46.673 17.5592 46.673 18.3507 47.1612 18.8388C47.6493 19.327 48.4408 19.327 48.9289 18.8388L56.8839 10.8839ZM0 11.25H56V8.75H0V11.25Z"
               />
             </svg>
           </button>
-          <!-- Navigation Button on Mobile -->
-          <div class="flex lg:hidden items-center justify-center gap-7 mt-14">
-            <button class="prev w-8 h-5 grid place-content-center">
-              <svg
-                width="31"
-                height="16"
-                viewBox="0 0 31 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.292892 8.7071C-0.0976315 8.31658 -0.0976314 7.68341 0.292893 7.29289L6.65686 0.92893C7.04738 0.538406 7.68054 0.538406 8.07107 0.92893C8.46159 1.31945 8.46159 1.95262 8.07107 2.34314L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.7071ZM31 9L1 9L1 7L31 7L31 9Z"
-                  fill="#232323"
-                />
-              </svg>
-            </button>
-            <button class="next w-8 h-5 grid place-content-center">
-              <svg
-                width="31"
-                height="16"
-                viewBox="0 0 31 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M30.7071 8.7071C31.0976 8.31658 31.0976 7.68341 30.7071 7.29289L24.3431 0.92893C23.9526 0.538406 23.3195 0.538406 22.9289 0.92893C22.5384 1.31945 22.5384 1.95262 22.9289 2.34314L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.7071ZM8.74228e-08 9L30 9L30 7L-8.74228e-08 7L8.74228e-08 9Z"
-                  fill="#232323"
-                />
-              </svg>
-            </button>
-          </div>
         </div>
       </section>
 

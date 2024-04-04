@@ -31,7 +31,7 @@
   }
 
   section {
-    @apply pt-16 sm:pt-24 md:pt-32 2xl:pt-170;
+    @apply pt-16  lg:pt-32 2xl:pt-170;
   }
 }
 
