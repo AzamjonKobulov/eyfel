@@ -1041,6 +1041,16 @@ section{
   inset: 0px;
 }
 
+.after\:z-20::after{
+  content: var(--tw-content);
+  z-index: 20;
+}
+
+.after\:z-10::after{
+  content: var(--tw-content);
+  z-index: 10;
+}
+
 .after\:h-full::after{
   content: var(--tw-content);
   height: 100%;
@@ -1056,11 +1066,42 @@ section{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.after\:from-brand-grey::after{
+  content: var(--tw-content);
+  --tw-gradient-from: #232323 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(35 35 35 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .after\:from-brand-grey-300\/65::after{
   content: var(--tw-content);
   --tw-gradient-from: rgb(56 52 48 / 0.65) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(56 52 48 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.after\:from-brand-grey\/50::after{
+  content: var(--tw-content);
+  --tw-gradient-from: rgb(35 35 35 / 0.5) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(35 35 35 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.after\:from-brand-grey\/80::after{
+  content: var(--tw-content);
+  --tw-gradient-from: rgb(35 35 35 / 0.8) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(35 35 35 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.after\:to-brand-grey\/80::after{
+  content: var(--tw-content);
+  --tw-gradient-to: rgb(35 35 35 / 0.8) var(--tw-gradient-to-position);
+}
+
+.after\:to-transparent::after{
+  content: var(--tw-content);
+  --tw-gradient-to: transparent var(--tw-gradient-to-position);
 }
 
 .hover\:border-brand-grey:hover{
@@ -1071,6 +1112,11 @@ section{
 .hover\:bg-white:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-brand-green:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(204 252 10 / var(--tw-bg-opacity));
 }
 
 .hover\:text-brand-green:hover{
@@ -1275,6 +1321,10 @@ section{
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:\!h-\[28\.125rem\]{
+    height: 28.125rem !important;
   }
 
   .lg\:h-70{
