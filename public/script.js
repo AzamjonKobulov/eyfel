@@ -17,18 +17,22 @@ var swiper = new Swiper('.mySwiper', {
       spaceBetween: 32,
     },
     1024: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 24,
     },
     1280: {
       slidesPerView: 3,
-      spaceBetween: 32,
+      spaceBetween: 24,
     },
     1440: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 32,
     },
     1536: {
+      slidesPerView: 4,
+      spaceBetween: 32,
+    },
+    1720: {
       slidesPerView: 4,
       spaceBetween: 50,
     },

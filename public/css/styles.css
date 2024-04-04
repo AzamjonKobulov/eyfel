@@ -676,6 +676,9 @@ section{
 .mt-7{
   margin-top: 1.75rem;
 }
+.\!block{
+  display: block !important;
+}
 .flex{
   display: flex;
 }
@@ -756,6 +759,9 @@ section{
 }
 .w-\[54\.8125rem\]{
   width: 54.8125rem;
+}
+.\!w-8{
+  width: 2rem !important;
 }
 .max-w-5xl{
   max-width: 64rem;
