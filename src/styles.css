@@ -36,20 +36,19 @@
 }
 
 /* Scrollbar Styles */
-::-webkit-scrollbar {
-  @apply h-2.5 -mb-5;
+.tabs::-webkit-scrollbar {
+  @apply hidden;
 }
 
-::-webkit-scrollbar-track {
-  @apply h-2.5 -mb-5 bg-brand-grey/15;
+/* Swiper Custom Styles */
+.swiper-pagination {
+  @apply !w-11/12 xl:!w-[96%] !h-[0.1875rem] !absolute !top-[98%] !left-5 xl:!left-10 !z-20 !bg-[#E9E8E880]/50 !rounded-full px-5 3xl:px-10;
 }
 
-::-webkit-scrollbar-thumb {
-  @apply bg-brand-grey/15 rounded-full;
+.swiper-pagination-progressbar {
+  @apply !h-[0.1875rem] !bg-[#E9E8E880]/50;
 }
 
-/* Works in Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #888 #f0f0f0; /* thumb color and track color */
+.swiper-pagination-progressbar-fill {
+  @apply !bg-brand-grey/15 !rounded-full;
 }
