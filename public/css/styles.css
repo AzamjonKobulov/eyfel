@@ -2460,6 +2460,10 @@ section{
     padding-top: 10rem;
   }
 
+  .\32xl\:pt-32{
+    padding-top: 8rem;
+  }
+
   .\32xl\:text-17{
     font-size: 1.0625rem;
   }
