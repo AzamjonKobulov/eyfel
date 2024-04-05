@@ -1758,6 +1758,10 @@ section{
     height: auto;
   }
 
+  .md\:h-12{
+    height: 3rem;
+  }
+
   .md\:w-3{
     width: 0.75rem;
   }
