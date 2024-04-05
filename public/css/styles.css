@@ -1968,6 +1968,11 @@ section{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .lg\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 @media (min-width: 80rem){
@@ -1990,6 +1995,14 @@ section{
 
   .xl\:mt-6{
     margin-top: 1.5rem;
+  }
+
+  .xl\:mt-10{
+    margin-top: 2.5rem;
+  }
+
+  .xl\:block{
+    display: block;
   }
 
   .xl\:hidden{
@@ -2016,6 +2029,18 @@ section{
     height: auto;
   }
 
+  .xl\:h-96{
+    height: 24rem;
+  }
+
+  .xl\:h-12{
+    height: 3rem;
+  }
+
+  .xl\:h-1\/2{
+    height: 50%;
+  }
+
   .xl\:max-w-5xl{
     max-width: 64rem;
   }
@@ -2038,6 +2063,10 @@ section{
 
   .xl\:gap-8{
     gap: 2rem;
+  }
+
+  .xl\:gap-0{
+    gap: 0px;
   }
 
   .xl\:space-y-20 > :not([hidden]) ~ :not([hidden]){
@@ -2192,6 +2221,10 @@ section{
     height: auto;
   }
 
+  .\32xl\:h-\[28\.125rem\]{
+    height: 28.125rem;
+  }
+
   .\32xl\:min-h-\[28\.125rem\]{
     min-height: 28.125rem;
   }
@@ -2264,6 +2297,14 @@ section{
     padding-bottom: 7rem;
   }
 
+  .\32xl\:pt-40{
+    padding-top: 10rem;
+  }
+
+  .\32xl\:pt-12{
+    padding-top: 3rem;
+  }
+
   .\32xl\:text-26{
     font-size: 1.625rem;
   }
@@ -2290,12 +2331,20 @@ section{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .\32xl\:text-17{
+    font-size: 1.0625rem;
+  }
 }
 
 @media (min-width: 107.5rem){
 
   .\33xl\:h-20{
     height: 5rem;
+  }
+
+  .\33xl\:h-70{
+    height: 4.375rem;
   }
 
   .\33xl\:h-\[18\.75rem\]{
