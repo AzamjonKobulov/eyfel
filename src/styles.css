@@ -23,15 +23,15 @@
   }
 
   h2 {
-    @apply font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-55;
+    @apply font-semibold text-2xl lg:text-4xl xl:text-5xl 2xl:text-55 2xl:leading-[3.4375rem];
   }
 
   h3 {
-    @apply font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-40;
+    @apply font-semibold text-2xl sm:text-3xl lg:text-4xl xl:text-40;
   }
 
   section {
-    @apply pt-16  lg:pt-32 2xl:pt-170;
+    @apply pt-12 sm:pt-16 lg:pt-20 2xl:pt-32 3xl:pt-170;
   }
 }
 
