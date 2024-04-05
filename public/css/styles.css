@@ -659,6 +659,15 @@ section{
 .top-3{
   top: 0.75rem;
 }
+.-right-\[20\%\]{
+  right: -20%;
+}
+.-right-1\/4{
+  right: -25%;
+}
+.-right-\[10\%\]{
+  right: -10%;
+}
 .z-10{
   z-index: 10;
 }
@@ -761,6 +770,15 @@ section{
 }
 .h-full{
   height: 100%;
+}
+.h-80{
+  height: 20rem;
+}
+.h-1\/2{
+  height: 50%;
+}
+.h-3\/4{
+  height: 75%;
 }
 .w-0{
   width: 0px;
@@ -1468,6 +1486,14 @@ section{
     top: 1rem;
   }
 
+  .sm\:-right-1\/4{
+    right: -25%;
+  }
+
+  .sm\:right-0{
+    right: 0px;
+  }
+
   .sm\:col-span-1{
     grid-column: span 1 / span 1;
   }
@@ -1523,6 +1549,14 @@ section{
 
   .sm\:h-auto{
     height: auto;
+  }
+
+  .sm\:h-2\/3{
+    height: 66.666667%;
+  }
+
+  .sm\:h-full{
+    height: 100%;
   }
 
   .sm\:w-10{
@@ -1671,6 +1705,14 @@ section{
     height: auto;
   }
 
+  .md\:h-96{
+    height: 24rem;
+  }
+
+  .md\:h-full{
+    height: 100%;
+  }
+
   .md\:w-auto{
     width: auto;
   }
@@ -1705,6 +1747,12 @@ section{
 
   .md\:gap-9{
     gap: 2.25rem;
+  }
+
+  .md\:space-y-10 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
   }
 
   .md\:px-5{
@@ -1743,6 +1791,11 @@ section{
   .md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .group:hover .md\:group-hover\:w-12{
@@ -1969,6 +2022,11 @@ section{
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 80rem){
@@ -2005,6 +2063,10 @@ section{
     margin-left: 0px;
   }
 
+  .xl\:block{
+    display: block;
+  }
+
   .xl\:hidden{
     display: none;
   }
@@ -2027,6 +2089,10 @@ section{
 
   .xl\:h-auto{
     height: auto;
+  }
+
+  .xl\:h-full{
+    height: 100%;
   }
 
   .xl\:max-w-5xl{
@@ -2173,6 +2239,10 @@ section{
     right: 0px;
   }
 
+  .\32xl\:top-0{
+    top: 0px;
+  }
+
   .\32xl\:col-span-1{
     grid-column: span 1 / span 1;
   }
@@ -2225,6 +2295,18 @@ section{
     height: auto;
   }
 
+  .\32xl\:h-\[28\.125rem\]{
+    height: 28.125rem;
+  }
+
+  .\32xl\:h-full{
+    height: 100%;
+  }
+
+  .\32xl\:min-h-\[28\.125rem\]{
+    min-height: 28.125rem;
+  }
+
   .\32xl\:w-14{
     width: 3.5rem;
   }
@@ -2255,6 +2337,10 @@ section{
 
   .\32xl\:max-w-2xl{
     max-width: 42rem;
+  }
+
+  .\32xl\:max-w-none{
+    max-width: none;
   }
 
   .\32xl\:grid-cols-3{
