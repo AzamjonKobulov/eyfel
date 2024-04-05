@@ -808,6 +808,9 @@ section{
 .w-full{
   width: 100%;
 }
+.w-16{
+  width: 4rem;
+}
 .min-w-max{
   min-width: -moz-max-content;
   min-width: max-content;
@@ -1080,6 +1083,14 @@ section{
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.py-2\.5{
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
 .pb-10{
   padding-bottom: 2.5rem;
@@ -1615,6 +1626,11 @@ section{
   .sm\:px-2\.5{
     padding-left: 0.625rem;
     padding-right: 0.625rem;
+  }
+
+  .sm\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .sm\:pb-12{
