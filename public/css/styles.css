@@ -792,6 +792,14 @@ button{
 .h-full{
   height: 100%;
 }
+.min-h-max{
+  min-height: -moz-max-content;
+  min-height: max-content;
+}
+.min-h-min{
+  min-height: -moz-min-content;
+  min-height: min-content;
+}
 .w-0{
   width: 0px;
 }
@@ -1720,6 +1728,12 @@ button{
     --tw-space-y-reverse: 0;
     margin-top: calc(2.25rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
+  }
+
+  .sm\:space-y-7 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
   }
 
   .sm\:px-10{
