@@ -33,6 +33,10 @@
   section {
     @apply pt-12 sm:pt-16 lg:pt-20 2xl:pt-32 3xl:pt-170;
   }
+
+  button {
+    @apply font-display;
+  }
 }
 
 /* Scrollbar Styles */

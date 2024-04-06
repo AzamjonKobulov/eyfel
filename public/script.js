@@ -1,7 +1,7 @@
 // Initialize Swiper
 var swiper = new Swiper('.mySwiper', {
-  slidesPerView: 1,
-  spaceBetween: 16,
+  slidesPerView: 4,
+  spaceBetween: 48,
   navigation: {
     nextEl: '.next',
     prevEl: '.prev',
@@ -16,16 +16,11 @@ var swiper = new Swiper('.mySwiper', {
       slidesPerView: 3,
       spaceBetween: 24,
     },
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 24,
-    },
     1280: {
       slidesPerView: 4,
-      spaceBetween: 30,
+      spaceBetween: 32,
     },
     1720: {
-      slidesPerView: 4,
       spaceBetween: 50,
     },
   },
@@ -43,16 +38,24 @@ var swiper = new Swiper('.mySwiper4', {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
+    0: {
+      slidesPerView: 1.1,
+      spaceBetween: 16,
+    },
+    480: {
+      slidesPerView: 1.3,
+      spaceBetween: 20,
+    },
     640: {
       slidesPerView: 2,
-      spaceBetween: 16,
+      spaceBetween: 20,
     },
     768: {
       slidesPerView: 2.2,
       spaceBetween: 24,
     },
     1024: {
-      slidesPerView: 3.2,
+      slidesPerView: 3,
       spaceBetween: 24,
     },
     1280: {
