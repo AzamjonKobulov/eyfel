@@ -833,6 +833,9 @@ button{
 .w-\[4\.5rem\]{
   width: 4.5rem;
 }
+.w-\[4\.6875rem\]{
+  width: 4.6875rem;
+}
 .min-w-max{
   min-width: -moz-max-content;
   min-width: max-content;
