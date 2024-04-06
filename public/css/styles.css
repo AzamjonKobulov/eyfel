@@ -1664,6 +1664,10 @@ button{
     height: 100%;
   }
 
+  .sm\:h-\[66\.875rem\]{
+    height: 66.875rem;
+  }
+
   .sm\:w-12{
     width: 3rem;
   }
@@ -1955,6 +1959,10 @@ button{
 
   .md\:w-auto{
     width: auto;
+  }
+
+  .md\:w-\[4\.5rem\]{
+    width: 4.5rem;
   }
 
   .md\:max-w-xl{
