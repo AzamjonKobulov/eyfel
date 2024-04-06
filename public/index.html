@@ -1769,23 +1769,57 @@
             class="flex items-center justify-between px-5 sm:px-8 md:px-5 xl:px-10"
           >
             <h2>Отзывы</h2>
-            <button
-              class="h-11 xl:h-12 2xl:h-14 3xl:h-70 flex items-center gap-2 2xl:gap-3 bg-brand-grey text-white text-sm xl:text-17 font-medium border-2 border-transparent rounded-full group hover:bg-black px-4 lg:px-6 2xl:px-8"
-            >
-              <svg
-                width="15"
-                height="15"
-                viewBox="0 0 15 15"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-[0.6875rem] h-[0.6875rem] 2xl:w-auto 2xl:h-auto fill-brand-green"
+            <!-- Dropdown -->
+            <div class="relative">
+              <!-- Dropdown Button -->
+              <button
+                id="dropdownButton"
+                class="h-11 xl:h-12 2xl:h-14 3xl:h-70 relative z-30 flex items-center gap-2 2xl:gap-3 bg-brand-grey text-white text-sm xl:text-17 font-medium border-2 border-transparent rounded-full group hover:bg-black px-4 lg:px-6 2xl:px-8"
               >
-                <path
-                  d="M14.6291 4.68321C14.7309 4.72684 14.8182 4.78502 14.8909 4.85774C14.9636 4.93046 15 5.025 15 5.14135C15 5.2577 14.9782 5.35224 14.9346 5.42496C14.8909 5.49768 14.8109 5.56313 14.6946 5.62131L8.62967 8.37015C8.51332 8.44287 8.43332 8.53013 8.38969 8.63194L5.64085 14.675C5.59722 14.7914 5.53177 14.8714 5.4445 14.915C5.35724 14.9586 5.25543 14.9805 5.13908 14.9805C5.02273 14.9805 4.93546 14.9514 4.87728 14.8932C4.81911 14.835 4.75366 14.7477 4.68094 14.6314L0.0340878 0.66903C-0.0386329 0.465412 0.00499955 0.290883 0.164985 0.145441C0.32497 0 0.4995 -0.0363603 0.688574 0.0363603L14.6291 4.68321Z"
-                />
-              </svg>
-              Новосибирск
-            </button>
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-[0.6875rem] h-[0.6875rem] 2xl:w-auto 2xl:h-auto fill-brand-green"
+                >
+                  <path
+                    d="M14.6291 4.68321C14.7309 4.72684 14.8182 4.78502 14.8909 4.85774C14.9636 4.93046 15 5.025 15 5.14135C15 5.2577 14.9782 5.35224 14.9346 5.42496C14.8909 5.49768 14.8109 5.56313 14.6946 5.62131L8.62967 8.37015C8.51332 8.44287 8.43332 8.53013 8.38969 8.63194L5.64085 14.675C5.59722 14.7914 5.53177 14.8714 5.4445 14.915C5.35724 14.9586 5.25543 14.9805 5.13908 14.9805C5.02273 14.9805 4.93546 14.9514 4.87728 14.8932C4.81911 14.835 4.75366 14.7477 4.68094 14.6314L0.0340878 0.66903C-0.0386329 0.465412 0.00499955 0.290883 0.164985 0.145441C0.32497 0 0.4995 -0.0363603 0.688574 0.0363603L14.6291 4.68321Z"
+                  />
+                </svg>
+                Новосибирск
+              </button>
+              <!-- Dropdown list -->
+              <div
+                id="dropdownList"
+                class="absolute w-full z-20 bg-white text-start text-xs xl:text-sm 2xl:text-base 3xl:text-17 shadow-dropdown rounded-2xl xl:rounded-20 -mt-10 xl:-mt-11 3xl:-mt-14 pt-10 xl:pt-12 3xl:pt-14 hidden overflow-hidden transition-max-height duration-300 ease-in-out"
+                style="max-height: 0"
+              >
+                <ul>
+                  <li
+                    class="w-full hover:bg-brand-grey/5 cursor-pointer transition-all duration-300 px-4 py-4 xl:px-5 3xl:py-6"
+                  >
+                    Калининград
+                  </li>
+                  <li
+                    class="w-full hover:bg-brand-grey/5 cursor-pointer transition-all duration-300 px-4 py-4 xl:px-5 3xl:py-6"
+                  >
+                    Красноярск
+                  </li>
+                  <li
+                    class="w-full hover:bg-brand-grey/5 cursor-pointer transition-all duration-300 px-4 py-4 xl:px-5 3xl:py-6"
+                  >
+                    Москва
+                  </li>
+                  <li
+                    class="w-full hover:bg-brand-grey/5 cursor-pointer transition-all duration-300 px-4 py-4 xl:px-5 3xl:py-6"
+                  >
+                    Санкт-Петербург
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <!-- Tabs & Reviews -->
           <div class="space-y-12">

@@ -60,6 +60,9 @@ module.exports = {
       backgroundColor: {
         sex: 'linear-gradient(261.94deg, rgba(56, 52, 48, 0) 14.88%, rgba(79, 70, 61, 0.8) 95.25%)',
       },
+      boxShadow: {
+        dropdown: '6px 6px 60px 0px #00000026',
+      },
     },
   },
   plugins: [],

@@ -23,6 +23,41 @@ const mobileMenuLinks = document
   .querySelectorAll('#mobileMenu a')
   .forEach((link) => link.addEventListener('click', toggleMobMenu));
 
+// Function to toggle dropdown visibility
+function toggleDropdown(dropdownId) {
+  const dropdownList = document.getElementById(dropdownId);
+  dropdownList.classList.toggle('hidden');
+  dropdownList.style.maxHeight = dropdownList.classList.contains('hidden')
+    ? '0'
+    : dropdownList.scrollHeight + 'px';
+}
+
+// Function to close dropdown when clicking outside
+function closeDropdownOnClickOutside(buttonId, listId) {
+  const dropdownButton = document.getElementById(buttonId);
+  const dropdownList = document.getElementById(listId);
+
+  document.addEventListener('click', function (event) {
+    const target = event.target;
+
+    // Check if the clicked element is not part of the dropdown
+    if (target !== dropdownButton && !dropdownList.contains(target)) {
+      dropdownList.classList.add('hidden'); // Hide the dropdown
+      dropdownList.style.maxHeight = '0';
+    }
+  });
+}
+
+// Call the function to close dropdown when clicking outside
+closeDropdownOnClickOutside('dropdownButton', 'dropdownList');
+
+// Event listener to toggle dropdown on button click
+document
+  .getElementById('dropdownButton')
+  .addEventListener('click', function () {
+    toggleDropdown('dropdownList');
+  });
+
 // Initialize Swiper
 var swiper = new Swiper('.mySwiper', {
   navigation: {
