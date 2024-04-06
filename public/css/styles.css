@@ -795,6 +795,16 @@ button{
 .h-full{
   height: 100%;
 }
+.h-80{
+  height: 20rem;
+}
+.max-h-min{
+  max-height: -moz-min-content;
+  max-height: min-content;
+}
+.max-h-screen{
+  max-height: 100vh;
+}
 .min-h-max{
   min-height: -moz-max-content;
   min-height: max-content;
@@ -1174,6 +1184,9 @@ button{
 }
 .pt-10{
   padding-top: 2.5rem;
+}
+.pl-5{
+  padding-left: 1.25rem;
 }
 .text-center{
   text-align: center;

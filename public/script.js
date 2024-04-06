@@ -1,12 +1,17 @@
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
+const hamburger = document.querySelector('#hamburger');
+const mobileMenu = document.querySelector('#mobileMenu');
 
 function toggleMobMenu() {
   mobileMenu.classList.toggle('-translate-x-full');
   document.body.classList.toggle('overflow-hidden');
+  console.log('Click');
 }
 
 hamburger.addEventListener('click', toggleMobMenu);
+
+const mobileMenuLinks = document
+  .querySelectorAll('#mobileMenu a')
+  .forEach((link) => link.addEventListener('click', toggleMobMenu));
 
 // Initialize Swiper
 var swiper = new Swiper('.mySwiper', {
