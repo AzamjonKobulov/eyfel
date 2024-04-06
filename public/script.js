@@ -14,7 +14,7 @@ function toggleSearchMenu() {
   document.body.classList.toggle('overflow-hidden');
 }
 
-hamburger.addEventListener('click', toggleSearchMenu);
+hamburger.addEventListener('click', toggleMobMenu);
 searchButton.forEach((button) =>
   button.addEventListener('click', toggleSearchMenu)
 );
