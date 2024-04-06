@@ -1,13 +1,23 @@
 const hamburger = document.querySelector('#hamburger');
 const mobileMenu = document.querySelector('#mobileMenu');
 
+const searchButton = document.querySelectorAll('.search-button');
+const searchMenu = document.querySelector('#searchMenu');
+
 function toggleMobMenu() {
   mobileMenu.classList.toggle('-translate-x-full');
   document.body.classList.toggle('overflow-hidden');
-  console.log('Click');
 }
 
-hamburger.addEventListener('click', toggleMobMenu);
+function toggleSearchMenu() {
+  searchMenu.classList.toggle('-translate-x-full');
+  document.body.classList.toggle('overflow-hidden');
+}
+
+hamburger.addEventListener('click', toggleSearchMenu);
+searchButton.forEach((button) =>
+  button.addEventListener('click', toggleSearchMenu)
+);
 
 const mobileMenuLinks = document
   .querySelectorAll('#mobileMenu a')

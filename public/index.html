@@ -132,7 +132,7 @@
                 </svg>
               </button>
               <!-- Search -->
-              <button class="md:w-[4.5rem] 2xl:w-[6.375rem]">
+              <button class="search-button md:w-[4.5rem] 2xl:w-[6.375rem]">
                 <svg
                   width="30"
                   height="30"
@@ -345,6 +345,62 @@
           </li>
         </ul>
       </div>
+    </div>
+
+    <!--  Search Menu -->
+    <div
+      id="searchMenu"
+      class="min-h-[29.5rem] max-h-screen fixed inset-x-0 top-[1.875rem] !z-50 bg-brand-grey text-white -translate-x-full transition-all overflow-auto duration-300 py-5 pl-5 pr-12 sm:py-8 sm:pl-8 sm:pr-[4.5rem]"
+    >
+      <!-- Search Input -->
+      <div class="flex items-center gap-6 sm:gap-10">
+        <button class="search-button">
+          <svg
+            width="37"
+            height="37"
+            viewBox="0 0 37 37"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6 sm:w-auto sm:h-auto"
+          >
+            <path
+              d="M14.8091 3.70037C11.8634 3.70037 9.03832 4.87062 6.95539 6.95367C4.87245 9.03672 3.70227 11.8619 3.70227 14.8078C3.70227 17.7537 4.87245 20.5789 6.95539 22.662C9.03832 24.745 11.8634 25.9153 14.8091 25.9153C17.7548 25.9153 20.5799 24.745 22.6628 22.662C24.7457 20.5789 25.9159 17.7537 25.9159 14.8078C25.9159 11.8619 24.7457 9.03672 22.6628 6.95367C20.5799 4.87062 17.7548 3.70037 14.8091 3.70037ZM9.14763e-08 14.8078C0.000337511 12.4509 0.56315 10.1282 1.64166 8.03254C2.72017 5.93692 4.28324 4.12898 6.20095 2.75898C8.11866 1.38898 10.3356 0.496484 12.6676 0.155664C14.9996 -0.185156 17.3793 0.0355454 19.6088 0.799425C21.8383 1.56331 23.8534 2.8483 25.4865 4.54762C27.1195 6.24694 28.3235 8.31151 28.9983 10.5697C29.673 12.828 29.7991 15.2146 29.366 17.5314C28.933 19.8481 27.9532 22.0281 26.5083 23.89L36.4804 33.8627C36.8176 34.2118 37.0041 34.6795 36.9999 35.1648C36.9957 35.6502 36.801 36.1145 36.4578 36.4578C36.1146 36.801 35.6503 36.9957 35.1649 36.9999C34.6796 37.0041 34.212 36.8176 33.8629 36.4803L23.8908 26.5077C21.7017 28.2073 19.0797 29.2585 16.3229 29.5418C13.5661 29.8251 10.7851 29.3292 8.29614 28.1103C5.80721 26.8914 3.71022 24.9985 2.24362 22.6469C0.777032 20.2953 -0.000307882 17.5793 9.14763e-08 14.8078Z"
+              fill="#F0EBE5"
+            />
+          </svg>
+        </button>
+        <input
+          type="text"
+          class="flex-1 outline-none bg-transparent border-b border-brand-beige p-3 sm:p-4"
+          placeholder="что ищете?"
+        />
+      </div>
+
+      <!-- Search Results -->
+      <ul
+        class="space-y-7 sm:space-y-12 text-xl sm:text-26 text-brand-beige/50 mt-8 sm:mt-12"
+      >
+        <li>
+          <button class="active:text-brand-beige">
+            диффузор для автомобиля яблоко
+          </button>
+        </li>
+        <li>
+          <button class="active:text-brand-beige">
+            диффузор для автомобиля вишня
+          </button>
+        </li>
+        <li>
+          <button class="active:text-brand-beige">
+            диффузор для автомобиля черника
+          </button>
+        </li>
+        <li>
+          <button class="active:text-brand-beige">
+            диффузор для автомобиля премиум
+          </button>
+        </li>
+      </ul>
     </div>
 
     <!-- MAIN CONTENT -->
