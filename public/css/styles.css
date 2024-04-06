@@ -772,6 +772,12 @@ button{
 .h-full{
   height: 100%;
 }
+.h-14{
+  height: 3.5rem;
+}
+.h-9{
+  height: 2.25rem;
+}
 .w-0{
   width: 0px;
 }
@@ -823,6 +829,9 @@ button{
 }
 .w-full{
   width: 100%;
+}
+.w-\[4\.5rem\]{
+  width: 4.5rem;
 }
 .min-w-max{
   min-width: -moz-max-content;
