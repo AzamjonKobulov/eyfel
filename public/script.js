@@ -1,7 +1,5 @@
 // Initialize Swiper
 var swiper = new Swiper('.mySwiper', {
-  slidesPerView: 4,
-  spaceBetween: 48,
   navigation: {
     nextEl: '.next',
     prevEl: '.prev',
