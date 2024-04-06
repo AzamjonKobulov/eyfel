@@ -698,9 +698,6 @@ button{
 .mt-10{
   margin-top: 2.5rem;
 }
-.mt-14{
-  margin-top: 3.5rem;
-}
 .mt-4{
   margin-top: 1rem;
 }
@@ -1138,6 +1135,10 @@ button{
 .text-13{
   font-size: 0.8125rem;
 }
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1447,32 +1448,8 @@ button{
     height: 66.666667%;
   }
 
-  .xs\:h-3{
-    height: 0.75rem;
-  }
-
-  .xs\:h-3\.5{
-    height: 0.875rem;
-  }
-
   .xs\:h-44{
     height: 11rem;
-  }
-
-  .xs\:h-7{
-    height: 1.75rem;
-  }
-
-  .xs\:w-3{
-    width: 0.75rem;
-  }
-
-  .xs\:w-3\.5{
-    width: 0.875rem;
-  }
-
-  .xs\:w-7{
-    width: 1.75rem;
   }
 
   .xs\:grid-cols-2{
@@ -1511,16 +1488,6 @@ button{
   .xs\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .xs\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .xs\:text-xs{
-    font-size: 0.75rem;
-    line-height: 1rem;
   }
 
   .group:hover .xs\:group-hover\:w-12{
@@ -1563,6 +1530,10 @@ button{
     margin-right: 0px;
   }
 
+  .sm\:ml-8{
+    margin-left: 2rem;
+  }
+
   .sm\:ml-auto{
     margin-left: auto;
   }
@@ -1583,12 +1554,16 @@ button{
     display: block;
   }
 
-  .sm\:h-10{
-    height: 2.5rem;
+  .sm\:h-12{
+    height: 3rem;
   }
 
   .sm\:h-14{
     height: 3.5rem;
+  }
+
+  .sm\:h-365{
+    height: 22.8125rem;
   }
 
   .sm\:h-6{
@@ -1605,6 +1580,14 @@ button{
 
   .sm\:h-9{
     height: 2.25rem;
+  }
+
+  .sm\:h-\[1\.3125rem\]{
+    height: 1.3125rem;
+  }
+
+  .sm\:h-\[26\.4375rem\]{
+    height: 26.4375rem;
   }
 
   .sm\:h-\[36\.5625rem\]{
@@ -1627,12 +1610,16 @@ button{
     height: 100%;
   }
 
-  .sm\:w-10{
-    width: 2.5rem;
+  .sm\:w-12{
+    width: 3rem;
   }
 
   .sm\:w-32{
     width: 8rem;
+  }
+
+  .sm\:w-365{
+    width: 22.8125rem;
   }
 
   .sm\:w-6{
@@ -1645,6 +1632,10 @@ button{
 
   .sm\:w-9{
     width: 2.25rem;
+  }
+
+  .sm\:w-\[1\.4375rem\]{
+    width: 1.4375rem;
   }
 
   .sm\:w-auto{
@@ -1697,6 +1688,11 @@ button{
     padding-right: 0.625rem;
   }
 
+  .sm\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .sm\:pb-12{
     padding-bottom: 3rem;
   }
@@ -1741,11 +1737,6 @@ button{
     line-height: 1.5rem;
   }
 
-  .sm\:text-sm{
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
   .sm\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -1776,6 +1767,10 @@ button{
 
   .md\:mt-20{
     margin-top: 5rem;
+  }
+
+  .md\:ml-5{
+    margin-left: 1.25rem;
   }
 
   .md\:block{
@@ -1818,12 +1813,20 @@ button{
     height: 3.125rem;
   }
 
+  .md\:h-60{
+    height: 15rem;
+  }
+
   .md\:h-7{
     height: 1.75rem;
   }
 
   .md\:h-8{
     height: 2rem;
+  }
+
+  .md\:h-\[18\.75rem\]{
+    height: 18.75rem;
   }
 
   .md\:h-\[28\.125rem\]{
@@ -1848,6 +1851,10 @@ button{
 
   .md\:w-5{
     width: 1.25rem;
+  }
+
+  .md\:w-56{
+    width: 14rem;
   }
 
   .md\:w-7{
@@ -2161,6 +2168,10 @@ button{
     grid-column: span 1 / span 1;
   }
 
+  .xl\:ml-10{
+    margin-left: 2.5rem;
+  }
+
   .xl\:mt-10{
     margin-top: 2.5rem;
   }
@@ -2175,6 +2186,10 @@ button{
 
   .xl\:mt-6{
     margin-top: 1.5rem;
+  }
+
+  .xl\:ml-0{
+    margin-left: 0px;
   }
 
   .xl\:flex{
@@ -2291,6 +2306,11 @@ button{
   .xl\:py-4{
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .xl\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .xl\:pb-24{
