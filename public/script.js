@@ -1,3 +1,13 @@
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+function toggleMobMenu() {
+  mobileMenu.classList.toggle('-translate-x-full');
+  document.body.classList.toggle('overflow-hidden');
+}
+
+hamburger.addEventListener('click', toggleMobMenu);
+
 // Initialize Swiper
 var swiper = new Swiper('.mySwiper', {
   navigation: {

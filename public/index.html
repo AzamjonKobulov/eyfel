@@ -102,7 +102,7 @@
             <!-- Mobile Menu Button & Search -->
             <div class="flex items-center gap-6 sm:gap-12 md:gap-6">
               <!-- Mobile Menu Button -->
-              <button class="lg:hidden">
+              <button class="lg:hidden" id="hamburger">
                 <svg
                   width="36"
                   height="22"
@@ -262,9 +262,12 @@
     </header>
 
     <!--  Mobile Menu -->
-    <div class="hidden fixed inset-x-0 top-20 !z-50 bg-brand-grey px-5 pt-20">
+    <div
+      id="mobileMenu"
+      class="md:hidden fixed inset-x-0 top-[5.625rem] sm:top-[6.875rem] !z-50 overflow-y-auto -translate-x-full bg-brand-grey text-white transition-all duration-300 px-5 pt-14 pb-16 sm:pt-20 sm:pb-24"
+    >
       <ul
-        class="w-full hidden md:flex items-center justify-center gap-5 xl:gap-12 2xl:gap-[4.6875rem] text-13 2xl:text-lg py-3.5 2xl:py-5"
+        class="w-full space-y-7 sm:space-y-11 text-2xl sm:text-4xl text-13 2xl:text-lg py-3.5 2xl:py-5"
       >
         <li>
           <a
@@ -316,7 +319,7 @@
         </li>
       </ul>
 
-      <ul class="hidden lg:flex items-center gap-6">
+      <ul class="space-y-5 sm:space-y-9 text-xl sm:text-28 mt-24 sm:mt-32">
         <li>
           <a href="#" class="hover:underline transition-all duration-300"
             >Доставка и оплата</a
