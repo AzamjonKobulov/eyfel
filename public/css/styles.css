@@ -2546,6 +2546,11 @@ button{
     line-height: 1.75rem;
   }
 
+  .xl\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
   .xl\:hover\:gap-6:hover{
     gap: 1.5rem;
   }
