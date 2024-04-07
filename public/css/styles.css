@@ -2383,6 +2383,10 @@ button{
     height: auto;
   }
 
+  .xl\:h-50{
+    height: 3.125rem;
+  }
+
   .xl\:w-14{
     width: 3.5rem;
   }
