@@ -1,20 +1,23 @@
+// Function for Mobile Menu
 const hamburger = document.querySelector('#hamburger');
 const mobileMenu = document.querySelector('#mobileMenu');
-
-const searchButton = document.querySelectorAll('.search-button');
-const searchMenu = document.querySelector('#searchMenu');
 
 function toggleMobMenu() {
   mobileMenu.classList.toggle('-translate-x-full');
   document.body.classList.toggle('overflow-hidden');
 }
 
+hamburger.addEventListener('click', toggleMobMenu);
+
+// Function for Searchbar
+const searchButton = document.querySelectorAll('.search-button');
+const searchMenu = document.querySelector('#searchMenu');
+
 function toggleSearchMenu() {
   searchMenu.classList.toggle('-translate-x-full');
   document.body.classList.toggle('overflow-hidden');
 }
 
-hamburger.addEventListener('click', toggleMobMenu);
 searchButton.forEach((button) =>
   button.addEventListener('click', toggleSearchMenu)
 );
@@ -32,7 +35,6 @@ function toggleDropdown(dropdownId) {
     : dropdownList.scrollHeight + 'px';
 }
 
-// Function to close dropdown when clicking outside
 function closeDropdownOnClickOutside(buttonId, listId) {
   const dropdownButton = document.getElementById(buttonId);
   const dropdownList = document.getElementById(listId);
@@ -40,7 +42,6 @@ function closeDropdownOnClickOutside(buttonId, listId) {
   document.addEventListener('click', function (event) {
     const target = event.target;
 
-    // Check if the clicked element is not part of the dropdown
     if (target !== dropdownButton && !dropdownList.contains(target)) {
       dropdownList.classList.add('hidden'); // Hide the dropdown
       dropdownList.style.maxHeight = '0';
@@ -48,10 +49,8 @@ function closeDropdownOnClickOutside(buttonId, listId) {
   });
 }
 
-// Call the function to close dropdown when clicking outside
 closeDropdownOnClickOutside('dropdownButton', 'dropdownList');
 
-// Event listener to toggle dropdown on button click
 document
   .getElementById('dropdownButton')
   .addEventListener('click', function () {
